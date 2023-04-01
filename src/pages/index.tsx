@@ -16,26 +16,55 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p>Foto As&apos;ad</p>
+        <div className="flex gap-4">
+          <a
+            href="https://github.com/AsadSaleh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.description}
+          >
+            <p>Github</p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/as-ad-saleh-umar-876608a4/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.description}
+          >
+            <p>LinkedIn</p>
+          </a>
+          <a
+            href="https://stackoverflow.com/users/9844546/asad-s"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.description}
+          >
+            <p>StackOverflow</p>
+          </a>
         </div>
 
-        <div className={styles.center}>
-          <p className="">
-            Hello there, As&apos;ad&apos;s here, a software developer from
-            Indonesia.
-          </p>
-          <p>
-            <span>
-              I started my journey as a Bachelor of Physics, but now I&apos;m in
-              love with software engineering. &nbsp;
-            </span>
-            I started coding using Fortran in university, but I kickstarted my
-            journey in computer science by taking a &quot;6 months unofficial
-            bootcamp&quot; course of ReactJS with my mentor. After that, I
-            landed a job in a software house in Jakarta, and have learned a lot
-            about programming since then.
-          </p>
+        <div className={"" + styles.center}>
+          <div className="flex gap-4 items-center">
+            <Image
+              src="/images/profile.jpg"
+              width={80}
+              height={80}
+              alt="As'ad"
+              className="rounded-full"
+            />
+            <div>
+              <p className="text-xl text-stone-400 italic">
+                Hello there! <br />
+              </p>
+              <p className="text-3xl">
+                <span className="text-orange-300">[</span>As&apos;ad
+                <span className="text-orange-300">]</span>&apos;s &nbsp;here, a
+                software
+                <br /> developer from Indonesia.
+              </p>
+            </div>
+            <p></p>
+          </div>
         </div>
 
         <div className={styles.grid}>
@@ -48,12 +77,7 @@ export default function Home() {
             </p>
           </Link>
 
-          <Link
-            href="/about"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="/about" className={styles.card}>
             <h2 className={inter.className}>
               About <span>-&gt;</span>
             </h2>
