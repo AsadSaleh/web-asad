@@ -21,7 +21,7 @@ export default function Home() {
             href="https://github.com/AsadSaleh"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.description}
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-black"
           >
             <p>Github</p>
           </a>
@@ -29,7 +29,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/as-ad-saleh-umar-876608a4/"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.description}
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-slate-900"
           >
             <p>LinkedIn</p>
           </a>
@@ -37,7 +37,7 @@ export default function Home() {
             href="https://stackoverflow.com/users/9844546/asad-s"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.description}
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-orange-950"
           >
             <p>StackOverflow</p>
           </a>
