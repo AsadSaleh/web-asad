@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Porto() {
   return (
@@ -24,106 +25,148 @@ export default function Porto() {
           Some of my public / hobby works are listed here
         </div>
 
-        <div className="flex flex-col gap-4">
-          <div className="px-6 py-2 border-stone-600 rounded-xl border flex items-center justify-between">
-            <div>
-              <p className="text-xl tracking-wide">Drop Em</p>
-              <p className="text-lg text-stone-400">
-                NPM Library for creating Drag & Drop React component
-              </p>
-            </div>
-            <a
-              href="https://github.com/AsadSaleh/drop-em"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-mono text-[12px] p-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-slate-900"
-            >
-              GitHub
-            </a>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* TimeToSync */}
+          <Card
+            title="TimeToSync"
+            desc="A beatiful clock app for team sync across the globe"
+            imageUrl="/images/timetosync.png"
+            links={{
+              app: "https://timetosync.netlify.app/",
+              github: "https://github.com/AsadSaleh/time-ui",
+            }}
+          />
 
-          <div className="px-6 py-2 border-stone-600 rounded-xl border flex items-center justify-between">
-            <div>
-              <p className="text-xl tracking-wide">Time UI</p>
-              <p className="text-lg text-stone-400">
-                A simple web for managing your preferred global clocks
-              </p>
-            </div>
-            <div className="flex justify-end gap-1">
-              <a
-                href="https://github.com/AsadSaleh/time-ui"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-mono text-[12px] p-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-slate-900"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://timezone-jakarta-ui.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-mono text-[12px] p-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-stone-900"
-              >
-                Open App
-              </a>
-            </div>
-          </div>
+          {/* Drop em */}
+          <Card
+            title="Drop Em"
+            desc="Component example for creating Drag & Drop file in React"
+            links={{ github: "https://github.com/AsadSaleh/drop-em" }}
+            imageUrl=""
+          />
 
-          <div className="px-6 py-2 border-stone-600 rounded-xl border flex items-center justify-between">
-            <p className="text-lg text-stone-400">
-              A website for Infradigital Foundation company profile
-            </p>
-            <a
-              href="https://infradigitalfoundation.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-mono text-[12px] p-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-stone-900"
-            >
-              Open App
-            </a>
-          </div>
+          {/* Pajakin */}
+          <Card
+            title="Pajakin"
+            desc="Free tax calculator for Indonesian worker (Pph 21)"
+            imageUrl="/images/pajakin.png"
+            links={{
+              app: "https://pajakin.vercel.app/",
+              github: "https://github.com/AsadSaleh/pajakin",
+            }}
+          />
 
-          <div className="px-6 py-2 border-stone-600 rounded-xl border flex items-center justify-between">
-            <p className="text-lg text-stone-400">
-              A website for Iyada company profile
-            </p>
-            <a
-              href="https://iyada.id/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-mono text-[12px] p-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-stone-900"
-            >
-              Open App
-            </a>
-          </div>
+          {/* Is it Retina? */}
+          <Card
+            title="Is it Retina?"
+            desc="Apakah layar kamu 'Retina Display'?"
+            imageUrl="/images/isitretina.png"
+            links={{
+              app: "https://is-it-retina.vercel.app/",
+              github: "https://github.com/AsadSaleh/is_it_retina",
+            }}
+          />
 
-          <div className="px-6 py-2 border-stone-600 rounded-xl border flex items-center justify-between">
-            <p className="text-lg text-stone-400">
-              A sample React Native app which follows Flip&apos;s delightful UI
-            </p>
-            <a
-              href="https://github.com/AsadSaleh/flip_react_native_app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-mono text-[12px] p-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-slate-900"
-            >
-              GitHub
-            </a>
-          </div>
+          {/* IDF */}
+          <Card
+            title="Yayasan IDF company profile"
+            desc=""
+            imageUrl="/images/idf.png"
+            links={{ app: "https://infradigitalfoundation.netlify.app/" }}
+          />
 
-          <div className="px-6 py-2 border-stone-600 rounded-xl border flex items-center justify-between">
-            <p className="text-lg text-stone-400">This website</p>
-            <a
-              href="https://github.com/AsadSaleh/web-asad"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-mono text-[12px] p-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-slate-900"
-            >
-              GitHub
-            </a>
-          </div>
+          {/* Iyada */}
+          <Card
+            title="PT Iyada company profile"
+            desc=""
+            imageUrl="/images/iyada.png"
+            links={{ app: "https://iyada.id/" }}
+          />
+
+          {/* React native */}
+          <Card
+            title="Flip mobile app (ui only)"
+            desc="A sample React Native app which follows Flip's delightful UI"
+            imageUrl=""
+            links={{
+              github: "https://github.com/AsadSaleh/flip_react_native_app",
+            }}
+          />
+
+          {/* This website */}
+          <Card
+            title="This website"
+            desc=""
+            imageUrl="/images/website.png"
+            links={{
+              github: "https://github.com/AsadSaleh/web-asad",
+            }}
+          />
         </div>
       </main>
     </>
+  );
+}
+
+function Card(props: {
+  imageUrl: string;
+  desc: string;
+  title: string;
+  links: { app?: string; github?: string };
+}) {
+  return (
+    <div className="p-6 border-stone-600 gap-4 rounded-xl border flex flex-col items-center justify-between">
+      {/* Image */}
+      {props.imageUrl ? (
+        <Image
+          src={props.imageUrl}
+          width={400}
+          height={400}
+          alt="As'ad"
+          className=""
+        />
+      ) : (
+        <div className="flex h-[200px] w-full items-center text-sm justify-center bg-slate-800 rounded-md">
+          {" "}
+          <p className="font-light italic text-center">No Image</p>
+        </div>
+      )}
+
+      {/* Title & Desc */}
+      <div>
+        <p className="text-xl tracking-wide">{props.title}</p>
+        <p className="text-lg text-stone-400">{props.desc}</p>
+      </div>
+
+      {/* Link */}
+      <div className="flex justify-start items-start gap-2">
+        {Object.entries(props.links).map(([type, url]) => {
+          if (type === "github") {
+            return (
+              <a
+                key={type}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-[12px] py-2 px-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-slate-900"
+              >
+                GitHub
+              </a>
+            );
+          }
+          return (
+            <a
+              key={type}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[12px] py-2 px-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-stone-900"
+            >
+              Open App
+            </a>
+          );
+        })}
+      </div>
+    </div>
   );
 }
