@@ -87,7 +87,7 @@ export default function Home() {
           </Link>
 
           <a
-            href="https://asadghanim.notion.site/Programming-Curriculum-60b88f5ac71f44599f1b537d62173b12"
+            href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
