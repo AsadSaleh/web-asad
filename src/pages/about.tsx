@@ -22,18 +22,17 @@ export default function About() {
         </div>
         <div className="text-3xl tracking-wider">
           <p>
-            Meu nome e <br className="block md:hidden" />
+            Nama saya <br className="block md:hidden" />
             <span className="text-orange-500">[</span>As&apos;ad Saleh Umar
             <span className="text-orange-500">]</span>
           </p>
         </div>
-        <div className="text-lg mb-2 tracking-wide">
+        <div className="text-lg mb-2 tracking-wide mt-4">
           I started my journey as a Bachelor of Physics, but now I&apos;m in
           love with software engineering. I started coding using Fortran in
           university, but I kickstarted my journey in computer science by taking
           a &quot;6 months unofficial bootcamp&quot; course of ReactJS with my
-          mentor. After that, I landed a job in a software house in Jakarta, and
-          have learned a lot about programming since then.
+          mentor.
         </div>
         <div className="bg-stone-600 p-4 rounded mb-2">
           <h4 className="text-4xl mb-2 font-mono">Titik Balik;🇮🇩</h4>
