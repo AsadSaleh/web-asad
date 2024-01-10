@@ -23,9 +23,17 @@ export default function Porto() {
 
         <div className="mb-4 text-lg">
           Some of my public / hobby works are listed here
-        </div>
+            {/* GlobalTimeDetector */}
+            <Card
+              title="Global Time Detector"
+              desc="A simple app to detect a time and convert it to your timezone"
+              imageUrl="/images/global-time-detector.png"
+              links={{
+                app: "https://globaltimedetector.vercel.app/",
+                github: "https://github.com/AsadSaleh/detect-time",
+              }}
+            />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* TimeToSync */}
           <Card
             title="TimeToSync"
