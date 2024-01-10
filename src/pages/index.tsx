@@ -1,10 +1,8 @@
+import ArrowRightIcon from "@/icon/arrow-right";
+import ArrowUpRightIcon from "@/icon/arrow-up-right";
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,21 +13,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className="w-screen h-screen flex items-center flex-col justify-between py-20 px-4">
         <div className="flex gap-4">
           <a
             href="https://github.com/AsadSaleh"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-black"
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-black text-white"
           >
-            <p>Github</p>
+            <p>GitHub</p>
           </a>
           <a
             href="https://www.linkedin.com/in/as-ad-saleh-umar-876608a4/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-slate-900"
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-[#0077b5] text-white"
           >
             <p>LinkedIn</p>
           </a>
@@ -37,65 +35,77 @@ export default function Home() {
             href="https://stackoverflow.com/users/9844546/asad-s"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-orange-950"
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-[#F48024] text-white"
           >
             <p>StackOverflow</p>
           </a>
         </div>
 
-        <div className={"" + styles.center}>
-          <div className="flex gap-4 items-center">
-            <Image
-              src="/images/profile.jpg"
-              width={80}
-              height={80}
-              alt="As'ad"
-              className="rounded-full"
-            />
-            <div>
-              <p className="text-xl text-stone-400 italic">
-                Hello there! <br />
-              </p>
-              <p className="text-3xl">
-                <span className="text-orange-300">[</span>As&apos;ad
-                <span className="text-orange-300">]</span>&apos;s &nbsp;here, a
-                software
-                <br /> developer from Indonesia.
-              </p>
-            </div>
-            <p></p>
+        <div className="flex gap-4 items-center">
+          <Image
+            src="/images/profile.jpg"
+            width={80}
+            height={80}
+            alt="As'ad"
+            className="rounded-full"
+          />
+          <div>
+            <p className="text-xl text-stone-400 italic">
+              Hello there! <br />
+            </p>
+            <p className="text-4xl dark:text-white">
+              <span>My name is&nbsp;</span>
+              <span className="">As&apos;ad</span>
+            </p>
+            <p className="text-3xl dark:text-white">
+              I&apos;m a{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-red-700 font-semibold bg-clip-text text-transparent">
+                software engineer
+              </span>{" "}
+              from Indonesia.
+            </p>
           </div>
+          <p></p>
         </div>
 
-        <div className={styles.grid}>
-          <Link href="/porto" className={styles.card}>
-            <h2 className={inter.className}>
-              Portfolio <span>-&gt;</span>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Link
+            href="/porto"
+            className="group px-8 py-4 rounded-lg hover:bg-gradient-to-r hover:from-blue-600 hover:to-violet-700 active:scale-95 transition-all"
+          >
+            <h2 className="text-3xl flex items-center gap-2 group-hover:text-white dark:text-white">
+              <span>Portfolio</span>
+              <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
             </h2>
-            <p className={inter.className}>
+            <p className="group-hover:text-white dark:text-white">
               Let&apos;s see As&apos;ad&apos;s playing cards
             </p>
           </Link>
 
-          <Link href="/about" className={styles.card}>
-            <h2 className={inter.className}>
-              About <span>-&gt;</span>
+          <Link
+            href="/about"
+            className="group px-8 py-4 rounded-lg hover:bg-gradient-to-r hover:from-red-700 hover:to-orange-600 active:scale-95 transition"
+          >
+            <h2 className="text-3xl flex items-center gap-2 group-hover:text-white dark:text-white">
+              <span>About</span>
+              <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
             </h2>
-            <p className={inter.className}>
+            <p className="group-hover:text-white dark:text-white">
               Read a boring stroy about my journey
             </p>
           </Link>
 
           <a
             href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
-            className={styles.card}
+            className="group px-8 py-4 rounded-lg hover:bg-gradient-to-r hover:from-green-600 hover:to-teal-800 active:scale-95 transition"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Blogs <span>-&gt;</span>
+            <h2 className="text-3xl flex gap-1 group-hover:text-white dark:text-white">
+              <span>Blogs</span>
+              <ArrowUpRightIcon className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
             </h2>
-            <p className={inter.className}>
+            <p className="group-hover:text-white dark:text-white">
               Discover what&apos;s inside my head
             </p>
           </a>
