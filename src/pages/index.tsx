@@ -36,12 +36,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-screen h-screen flex items-center flex-col justify-between py-20 px-4">
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           <a
             href="https://github.com/AsadSaleh"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-black text-white flex items-center"
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-black text-white flex items-center active:scale-95 transition"
           >
             <p>GitHub</p>
           </a>
@@ -49,7 +49,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/as-ad-saleh-umar-876608a4/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-[#0077b5] text-white flex items-center"
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-[#0077b5] text-white flex items-center active:scale-95 transition"
           >
             <p>LinkedIn</p>
           </a>
@@ -57,17 +57,17 @@ export default function Home() {
             href="https://stackoverflow.com/users/9844546/asad-s"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-[#F48024] text-white flex items-center"
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-[#F48024] text-white flex items-center active:scale-95 transition"
           >
             <p>StackOverflow</p>
           </a>
           <button
             onClick={copyEmailToClipboard}
-            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-red-700 text-white flex items-center gap-2"
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-red-700 text-white flex items-center active:scale-95 transition gap-2"
           >
             Mail
             {coppied ? (
-              <CheckIcon className="w-4 h-4 text-green-200" />
+              <CheckIcon className="w-4 h-4 text-white font-bold" />
             ) : (
               <DocumentDuplicateIcon className="w-4 h-4" />
             )}
@@ -76,7 +76,7 @@ export default function Home() {
             href="/documents/CV_Asad_January2024.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] p-4 px-6 border-[0.5px] border-[#6C6C6C] rounded-xl bg-green-700 text-white flex items-center gap-1"
+            className="font-mono text-[12px] p-4 px-6 border-[0.5px] border-[#6C6C6C] rounded-xl bg-green-700 text-white flex items-center active:scale-95 transition gap-1"
           >
             Latest CV
           </a>
