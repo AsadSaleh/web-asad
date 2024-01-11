@@ -35,7 +35,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="w-screen h-screen flex items-center flex-col justify-between py-20 px-4">
+      <main className="w-screen h-screen flex items-center flex-col justify-between py-8 md:py-20 px-4">
         <div className="flex gap-4 flex-wrap">
           <a
             href="https://github.com/AsadSaleh"
@@ -82,7 +82,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex flex-col md:flex-row gap-4 items-center">
           <Image
             src="/images/profile.jpg"
             width={80}
@@ -109,46 +109,52 @@ export default function Home() {
           <p></p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           <Link
             href="/porto"
-            className="group px-8 py-4 rounded-lg hover:bg-gradient-to-r hover:from-blue-600 hover:to-violet-700 active:scale-95 transition-all"
+            className="group p-1 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 active:scale-95 transition-all"
           >
-            <h2 className="text-3xl flex items-center gap-2 group-hover:text-white dark:text-white">
-              <span>Portfolio</span>
-              <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
-            </h2>
-            <p className="group-hover:text-white dark:text-white">
-              Let&apos;s see As&apos;ad&apos;s playing cards
-            </p>
+            <div className="w-full h-full p-2 md:px-8 md:py-4 bg-white dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
+              <h2 className="text-3xl flex items-center gap-2 text-black group-hover:text-white dark:text-white">
+                <span>Portfolio</span>
+                <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
+              </h2>
+              <p className="text-black group-hover:text-white dark:text-white">
+                Let&apos;s see As&apos;ad&apos;s playing cards
+              </p>
+            </div>
           </Link>
 
           <Link
             href="/about"
-            className="group px-8 py-4 rounded-lg hover:bg-gradient-to-r hover:from-red-700 hover:to-orange-600 active:scale-95 transition"
+            className="group p-1 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 active:scale-95 transition"
           >
-            <h2 className="text-3xl flex items-center gap-2 group-hover:text-white dark:text-white">
-              <span>About</span>
-              <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
-            </h2>
-            <p className="group-hover:text-white dark:text-white">
-              Read a boring stroy about my journey
-            </p>
+            <div className="w-full h-full p-2 md:px-8 md:py-4 bg-white dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
+              <h2 className="text-3xl flex items-center gap-2 group-hover:text-white dark:text-white">
+                <span>About</span>
+                <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
+              </h2>
+              <p className="group-hover:text-white dark:text-white">
+                Read a boring stroy about my journey
+              </p>
+            </div>
           </Link>
 
           <a
             href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
-            className="group px-8 py-4 rounded-lg hover:bg-gradient-to-r hover:from-green-600 hover:to-teal-800 active:scale-95 transition"
+            className="group p-1 rounded-lg bg-gradient-to-r from-green-600 to-teal-800 active:scale-95 transition"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className="text-3xl flex gap-1 group-hover:text-white dark:text-white">
-              <span>Blogs</span>
-              <ArrowUpRightIcon className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-            </h2>
-            <p className="group-hover:text-white dark:text-white">
-              Discover what&apos;s inside my head
-            </p>
+            <div className="w-full h-full p-2 md:px-8 md:py-4 bg-white dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
+              <h2 className="text-3xl flex gap-1 group-hover:text-white dark:text-white">
+                <span>Blogs</span>
+                <ArrowUpRightIcon className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+              </h2>
+              <p className="group-hover:text-white dark:text-white">
+                Discover what&apos;s inside my head
+              </p>
+            </div>
           </a>
         </div>
       </main>
