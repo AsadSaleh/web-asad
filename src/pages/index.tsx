@@ -1,10 +1,32 @@
+import DocumentDuplicateIcon from "@/icon/document-duplicate";
 import ArrowRightIcon from "@/icon/arrow-right";
 import ArrowUpRightIcon from "@/icon/arrow-up-right";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import CheckIcon from "@/icon/check";
 
 export default function Home() {
+  const [coppied, setCoppied] = useState(false);
+
+  async function copyEmailToClipboard() {
+    try {
+      const emailAddress = "azzzad.s@gmail.com";
+      await navigator.clipboard.writeText(emailAddress);
+      setCoppied(true);
+    } catch (error) {
+      console.log("failed to copy text");
+    }
+  }
+
+  useEffect(() => {
+    if (coppied) {
+      setTimeout(() => {
+        setCoppied(false);
+      }, 2000);
+    }
+  }, [coppied]);
   return (
     <>
       <Head>
@@ -19,7 +41,7 @@ export default function Home() {
             href="https://github.com/AsadSaleh"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-black text-white"
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-black text-white flex items-center"
           >
             <p>GitHub</p>
           </a>
@@ -27,7 +49,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/as-ad-saleh-umar-876608a4/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-[#0077b5] text-white"
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-[#0077b5] text-white flex items-center"
           >
             <p>LinkedIn</p>
           </a>
@@ -35,9 +57,28 @@ export default function Home() {
             href="https://stackoverflow.com/users/9844546/asad-s"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-[#F48024] text-white"
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-[#F48024] text-white flex items-center"
           >
             <p>StackOverflow</p>
+          </a>
+          <button
+            onClick={copyEmailToClipboard}
+            className="font-mono text-[12px] p-4 border-[0.5px] border-[#6C6C6C] rounded-xl bg-red-700 text-white flex items-center gap-2"
+          >
+            Mail
+            {coppied ? (
+              <CheckIcon className="w-4 h-4 text-green-200" />
+            ) : (
+              <DocumentDuplicateIcon className="w-4 h-4" />
+            )}
+          </button>
+          <a
+            href="/documents/CV_Asad_January2024.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-[12px] p-4 px-6 border-[0.5px] border-[#6C6C6C] rounded-xl bg-green-700 text-white flex items-center gap-1"
+          >
+            Latest CV
           </a>
         </div>
 

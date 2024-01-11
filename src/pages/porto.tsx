@@ -16,7 +16,7 @@ export default function Porto() {
         <nav className="flex">
           <Link
             href="/"
-            className="my-4 px-4 py-2 rounded hover:bg-stone-400 bg-stone-700 transition flex items-center gap-2"
+            className="my-4 px-4 py-2 transition flex items-center gap-2 rounded active:scale-95 bg-slate-200 hover:bg-slate-300 dark:bg-stone-500 dark:hover:bg-stone-400"
           >
             <ArrowLeftIcon />
             To Home
