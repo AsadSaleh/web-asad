@@ -73,7 +73,7 @@ export default function Home() {
             )}
           </button>
           <a
-            href="/documents/CV_Asad_January2024.pdf"
+            href="/documents/CV_Asad.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-[12px] p-4 px-6 border-[0.5px] border-[#6C6C6C] rounded-xl bg-green-700 text-white flex items-center active:scale-95 transition gap-1"
