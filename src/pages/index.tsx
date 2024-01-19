@@ -109,17 +109,17 @@ export default function Home() {
           <p></p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="mt-10 pb-10 md:pb-0 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           <Link
             href="/porto"
             className="group p-1 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 active:scale-95 transition-all"
           >
-            <div className="w-full h-full p-2 md:px-8 md:py-4 bg-white dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-              <h2 className="text-3xl flex items-center gap-2 text-black group-hover:text-white dark:text-white">
+            <div className="w-full h-full p-2 md:px-8 md:py-4 dark:bg-black rounded-lg transition-all">
+              <h2 className="text-3xl flex items-center gap-2 text-white dark:text-white">
                 <span>Portfolio</span>
                 <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
               </h2>
-              <p className="text-black group-hover:text-white dark:text-white">
+              <p className="text-white dark:text-white">
                 Let&apos;s see As&apos;ad&apos;s playing cards
               </p>
             </div>
@@ -129,12 +129,12 @@ export default function Home() {
             href="/about"
             className="group p-1 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 active:scale-95 transition"
           >
-            <div className="w-full h-full p-2 md:px-8 md:py-4 bg-white dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-              <h2 className="text-3xl flex items-center gap-2 group-hover:text-white dark:text-white">
+            <div className="w-full h-full p-2 md:px-8 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
+              <h2 className="text-3xl flex items-center gap-2 text-white dark:text-white">
                 <span>About</span>
                 <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
               </h2>
-              <p className="group-hover:text-white dark:text-white">
+              <p className="text-white dark:text-white">
                 Read a boring stroy about my journey
               </p>
             </div>
@@ -146,16 +146,55 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="w-full h-full p-2 md:px-8 md:py-4 bg-white dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-              <h2 className="text-3xl flex gap-1 group-hover:text-white dark:text-white">
+            <div className="w-full h-full p-2 md:px-8 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
+              <h2 className="text-3xl flex gap-1 text-white dark:text-white">
                 <span>Blogs</span>
                 <ArrowUpRightIcon className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
               </h2>
-              <p className="group-hover:text-white dark:text-white">
+              <p className="text-white dark:text-white">
                 Discover what&apos;s inside my head
               </p>
             </div>
           </a>
+        </div>
+
+        {/* Tech Stack */}
+        <div className="mt-10 md:max-w-5xl ">
+          <h4 className="text-center font-bold text-slate-400">Tech Stack</h4>
+          <div className="mt-2 flex gap-4 flex-wrap items-center justify-center text-slate-400 tracking-wider">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>SASS</p>
+            <p>TailwindCSS</p>
+            <p>JavaScript</p>
+            <p>TypeScript</p>
+            <p>NodeJS</p>
+            <p>Express</p>
+            <p>Fastify</p>
+            <p>SequelizeORM</p>
+            <p>PrismaORM</p>
+            <p>MySQL</p>
+            <p>Postgres</p>
+            <p>MongoDB</p>
+            <p>Redis</p>
+            <p>ReactJS</p>
+            <p>NextJS</p>
+            <p>Remix</p>
+            <p>Vite</p>
+            <p>TanStack Query</p>
+            <p>TanStack Router</p>
+            <p>React Native</p>
+            <p>Dart</p>
+            <p>Flutter</p>
+            <p>Android</p>
+            <p>Docker</p>
+            <p>Vercel</p>
+            <p>Firebase</p>
+            <p>Supabase</p>
+            <p>Microsoft AppCenter</p>
+            <p>GooglePlay Console</p>
+            <p>Git</p>
+          </div>
         </div>
       </main>
     </>
