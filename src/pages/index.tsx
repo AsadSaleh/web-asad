@@ -114,7 +114,7 @@ export default function Home() {
             href="/porto"
             className="group p-1 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 active:scale-95 transition-all"
           >
-            <div className="w-full h-full p-2 md:px-8 md:py-4 dark:bg-black rounded-lg transition-all">
+            <div className="w-full h-full p-2 md:px-8 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
               <h2 className="text-3xl flex items-center gap-2 text-white dark:text-white">
                 <span>Portfolio</span>
                 <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
@@ -156,45 +156,6 @@ export default function Home() {
               </p>
             </div>
           </a>
-        </div>
-
-        {/* Tech Stack */}
-        <div className="mt-10 md:max-w-5xl ">
-          <h4 className="text-center font-bold text-slate-400">Tech Stack</h4>
-          <div className="mt-2 flex gap-4 flex-wrap items-center justify-center text-slate-400 tracking-wider">
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>SASS</p>
-            <p>TailwindCSS</p>
-            <p>JavaScript</p>
-            <p>TypeScript</p>
-            <p>NodeJS</p>
-            <p>Express</p>
-            <p>Fastify</p>
-            <p>SequelizeORM</p>
-            <p>PrismaORM</p>
-            <p>MySQL</p>
-            <p>Postgres</p>
-            <p>MongoDB</p>
-            <p>Redis</p>
-            <p>ReactJS</p>
-            <p>NextJS</p>
-            <p>Remix</p>
-            <p>Vite</p>
-            <p>TanStack Query</p>
-            <p>TanStack Router</p>
-            <p>React Native</p>
-            <p>Dart</p>
-            <p>Flutter</p>
-            <p>Android</p>
-            <p>Docker</p>
-            <p>Vercel</p>
-            <p>Firebase</p>
-            <p>Supabase</p>
-            <p>Microsoft AppCenter</p>
-            <p>GooglePlay Console</p>
-            <p>Git</p>
-          </div>
         </div>
       </main>
     </>

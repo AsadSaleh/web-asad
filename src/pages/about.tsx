@@ -28,6 +28,48 @@ export default function About() {
           <h4 className="mb-4 text-xl dark:text-slate-500">
             Not much, but quite a story ain&apos;t it?
           </h4>
+
+          {/* Tech Stack */}
+          <div className="mt-10">
+            <h4 className="text-3xl tracking-wider dark:text-white text-left">
+              Tech Stack
+            </h4>
+            <div className="mt-4 flex gap-4 flex-wrap items-center justify-start text-slate-600 dark:text-slate-300">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>SASS</p>
+              <p>TailwindCSS</p>
+              <p>JavaScript</p>
+              <p>TypeScript</p>
+              <p>NodeJS</p>
+              <p>Express</p>
+              <p>Fastify</p>
+              <p>SequelizeORM</p>
+              <p>PrismaORM</p>
+              <p>MySQL</p>
+              <p>Postgres</p>
+              <p>MongoDB</p>
+              <p>Redis</p>
+              <p>ReactJS</p>
+              <p>NextJS</p>
+              <p>Remix</p>
+              <p>Vite</p>
+              <p>TanStack Query</p>
+              <p>TanStack Router</p>
+              <p>React Native</p>
+              <p>Dart</p>
+              <p>Flutter</p>
+              <p>Android</p>
+              <p>Docker</p>
+              <p>Vercel</p>
+              <p>Firebase</p>
+              <p>Supabase</p>
+              <p>Microsoft AppCenter</p>
+              <p>GooglePlay Console</p>
+              <p>Git</p>
+            </div>
+          </div>
+
           <div className="mt-10 text-3xl tracking-wider dark:text-white">
             <p>
               Nama lengkap saya <br className="block md:hidden" />
