@@ -16,7 +16,7 @@ export default function About() {
         <nav className="flex">
           <Link
             href="/"
-            className="my-4 px-4 py-2 transition flex items-center gap-2 rounded active:scale-95 bg-slate-200 hover:bg-slate-300 dark:bg-stone-500 dark:hover:bg-stone-400"
+            className="my-4 px-4 py-2 transition flex items-center gap-2 rounded border-2 active:scale-95 bg-transparent border-stone-400 hover:bg-stone-200 dark:text-white dark:border-stone-200 dark:hover:bg-stone-100 dark:hover:text-black"
           >
             <ArrowLeftIcon />
             To Home
@@ -26,135 +26,140 @@ export default function About() {
         <section className="max-w-3xl mx-auto">
           <h1 className="text-3xl dark:text-white">About me</h1>
           <h4 className="mb-4 text-xl dark:text-slate-500">
-            Not much, but quite a story ain&apos;t it?
+            A not so organized story about me
           </h4>
 
+          <div className="mt-10 text-3xl dark:text-white">
+            <p>
+              <span>Nama saya&nbsp;</span>
+              <span className="text-orange-600 font-semibold">
+                As&apos;ad Saleh Umar
+              </span>
+            </p>
+          </div>
+          <div className="mt-4 text-lg tracking-wide dark:text-slate-300">
+            Saya adalah seorang profesional di bidang kayasa perangkat lunak
+            (RPL), dengan spesialisasi di bidang pengembangan aplikasi web dan
+            mobile.
+          </div>
+          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+            Utamanya, teknologi yang saya kuasai adalah di bidang front-end
+            development; tetapi saya juga tertarik pada teknologi backend,
+            seperti NodeJS, Golang, Rust. Saat ini, teknologi yang biasa saya
+            gunakan hari-hari adalah ReactJS (Vite) atau NextJS, TailwindCSS,
+            dan TanStack&apos;s (terutama Query dan Router).
+          </p>
+
           {/* Tech Stack */}
-          <div className="mt-10">
+          <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-slate-300 p-4 rounded">
             <h4 className="text-3xl tracking-wider dark:text-white text-left">
-              Tech Stack
+              Teknologi yang dikuasai
             </h4>
-            <div className="mt-4 flex gap-4 flex-wrap items-center justify-start text-slate-600 dark:text-slate-300">
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>SASS</p>
-              <p>TailwindCSS</p>
+            <div className="mt-2 flex gap-x-4 gap-y-2 flex-wrap items-center justify-start text-slate-600 dark:text-slate-300">
+              <p>Git</p>
+              <p>HTML</p>
+              <p>CSS</p>
               <p>JavaScript</p>
               <p>TypeScript</p>
-              <p>NodeJS</p>
-              <p>Express</p>
-              <p>Fastify</p>
-              <p>SequelizeORM</p>
-              <p>PrismaORM</p>
-              <p>MySQL</p>
-              <p>Postgres</p>
-              <p>MongoDB</p>
-              <p>Redis</p>
               <p>ReactJS</p>
               <p>NextJS</p>
               <p>Remix</p>
+              <p>SASS</p>
+              <p>TailwindCSS</p>
+              <p>NodeJS</p>
+              <p>Express</p>
+              <p>Postgres</p>
+              <p>MongoDB</p>
+              <p>Redis</p>
               <p>Vite</p>
-              <p>TanStack Query</p>
-              <p>TanStack Router</p>
+              <p>TanStack</p>
               <p>React Native</p>
               <p>Dart</p>
               <p>Flutter</p>
               <p>Android</p>
-              <p>Docker</p>
+            </div>
+
+            <h5 className="mt-4 text-2xl tracking-wider">Alat lainnya</h5>
+            <div className="mt-2 flex gap-x-4 gap-y-2 flex-wrap items-center justify-start text-slate-600 dark:text-slate-300">
               <p>Vercel</p>
-              <p>Firebase</p>
               <p>Supabase</p>
-              <p>Microsoft AppCenter</p>
-              <p>GooglePlay Console</p>
-              <p>Git</p>
+              <p>Docker</p>
+              <p>Prisma ORM</p>
+              <p>Firebase</p>
+              <p>Microsoft App Center</p>
+              <p>Google Play Console</p>
             </div>
           </div>
 
-          <div className="mt-10 text-3xl tracking-wider dark:text-white">
-            <p>
-              Nama lengkap saya <br className="block md:hidden" />
-              <span className="text-orange-500">[</span>As&apos;ad Saleh Umar
-              <span className="text-orange-500">]</span>
-            </p>
-          </div>
-          <div className="mt-4 text-lg tracking-wide dark:text-slate-300">
-            I started my journey as a Bachelor of Physics, but now I&apos;m in
-            love with software engineering. I started coding using Fortran in
-            university, but I kickstarted my journey in computer science by
-            taking a &quot;6 months unofficial bootcamp&quot; course of ReactJS
-            with my mentor.
-          </div>
+          <h4 className="mt-10 text-3xl dark:text-slate-300 font-mono">
+            Chapter0: Titik Balik Perjuangan 🇮🇩
+          </h4>
           <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
-            I mainly do front-end and mobile development, using ReactJS,
-            ReactNative, and Flutter; but I am also interested in the backend
-            technology, NodeJS, Golang, Rust, etc. Currently, my go-to stack is
-            NextJS/Remix/CRA, TailwindCSS, React Query, and Prisma. All done
-            --mostly-- in TypeScript.
+            Gue lulusan fisika.
           </p>
-
-          <div className="mt-10 bg-stone-400 dark:bg-stone-800 dark:text-slate-300 p-4 rounded">
-            <h4 className="text-4xl font-mono">
-              Chapter0: Titik Balik Perjuangan 🇮🇩
-            </h4>
-            <code>
-              Gue lulusan Fisika, pernah ngoding dikit pake bahasa Fortran untuk
-              skripsi. Habis itu gue nganggur setahun lebih setelah gue lulus
-              kuliah. Nah, dari situ gue belajar ngoding. 5 hari seminggu, 8 jam
-              sehari. Selama 6 bulan. Yang gue pelajari mulai dari HTML, CSS,
-              JavaScript, dan terakhir React. Setelah gue bisa React, gue coba
-              bikin 3 website sederhana. 1 buat nampilin informasi cuaca, 1
-              untuk nampilin infographics, 1 lagi lupa buat apa. Ini kayaknya
-              gue kerjain dalam waktu 1 bulan. Ini disebut portofolio ternyata.
-              Dulu gue belum tau. Tapi dengan gue buat ini, temen gue cukup
-              yakin gue bisa mulai kerja. Nah, setelah itu gue mulai internship
-              di kantor temen gue selama 2 bulan. Setelah internship dan cocok,
-              gue mulai kerja sebagai Junior Frontend Developer. Alhamdulillah.
-              <br />
-              <br />
-              Jujur waktu jeda kuliah sampai kerja gue cukup lama. 1 tahun lebih
-              dan belum jelas arah mau ngapain. Itu rasanya bangun tidur males
-              banget gak tau mau ngapain. Tapi pas udah ada kegiatan belajar
-              ngoding rutin tersebut, gue kayak punya semangat baru. Walaupun
-              belum tau bakal kerja sebagai software engineer, tapi dulu seneng
-              aja waktu mempelajari JavaScript, React, cara kerja internet, API,
-              dsb.
-            </code>
-          </div>
+          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+            Yup, bukan anak ilmu komputer. Pernah ngoding dikit pake bahasa
+            Fortran untuk skripsi. Habis itu gue nganggur setahun lebih setelah
+            gue lulus kuliah. Nah, dari situ gue belajar ngoding. 5 hari
+            seminggu, 8 jam sehari. Selama 6 bulan. Yang gue pelajari mulai dari
+            HTML, CSS, JavaScript, dan terakhir React. Setelah gue bisa React,
+            gue bikin 3 website sederhana. 1 buat nampilin informasi cuaca, 1
+            untuk nampilin infographics, 1 lagi lupa buat apa. Ini kayaknya gue
+            kerjain dalam waktu 1 bulan. Ini disebut portofolio ternyata.
+          </p>
+          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+            Dulu gue belum tau, tapi dengan portofolio, mentor gue cukup yakin
+            gue bisa mulai kerja. Nah, setelah itu gue mulai internship di
+            kantor mentor gue selama 2 bulan. Setelah internship dan cocok, gue
+            mulai kerja sebagai Junior Frontend Developer. Alhamdulillah.
+            Ternyata disitu manfaat <em>ordal</em> 😂.
+          </p>
+          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+            Jujur kalau dilihat kebelakang, waktu jeda kuliah sampai kerja gue
+            cukup lama. 1 tahun lebih dan belum jelas arah mau ngapain. Itu
+            rasanya bangun tidur males banget gak tau mau ngapain. Tapi pas udah
+            ada kegiatan belajar ngoding rutin tersebut, gue kayak punya
+            semangat baru. Walaupun belum tau bakal kerja sebagai software
+            engineer, tapi dulu seneng aja waktu mempelajari JavaScript, React,
+            cara kerja internet, client-server, API, dan sebagainya.
+          </p>
 
           <h4 className="mt-10 text-3xl dark:text-slate-300 font-mono">
             Chapter1: A late bachelor degree, RubyH
           </h4>
           <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
-            As a self-taught software engineer, I started my journey in RubyH.
-            It&apos;s a place where I learned so much about software development
-            itself. RubyH itself is a software house, so the majority of code I
-            write is for a client somewhere, but there is also one internal
-            product. As this is the first time I worked, I put myself as
-            &quot;the dumbest person&quot; in the room, I asked a lot of things!
-            And it helped me to grow really quickly as a software engineer.
+            Sebagai seorang software engineer yang belajar sendiri, perjalanan
+            karir saya dimulai di RubyH. Ini adalah tempat dimana saya belajar
+            banyak tentang software development itu sendiri. RubyH sendiri
+            adalah software house, jadi mayoritas kode yang saya tulis adalah
+            untuk klien pihak ketiga, tapi ada juga satu produk internal. Karena
+            ini pertama kalinya saya kerja, saya memposisikan diri sebagai
+            &quot;orang paling bodoh&quot; di ruangan, jadi saya banyak bertanya
+            tentang banyak hal! Dan itu membantu saya untuk tumbuh dengan cepat
+            sebagai seorang software engineer.
           </p>
           <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
-            Here, I worked on React project in my first year, and React Native
-            in my second year. My role at the start is just as a developer, but
-            at the time I leave, I mentor 2 junior react devs and was helping to
-            make decisions on front-end technology that was going to be used in
-            projects. The product called Moodah --one of the products I loved
-            the most here-- is a web and mobile app we sell as a SaaS which
-            provides low-cost ERP for Indonesian UMKM ( SMEs). Here I worked on
-            the React Native client-side app which interacts with the GraphQL
-            backend using Apollo Client.
+            Tahun pertama di RubyH, kerjaan saya kebanyakan pegang ReactJS
+            (web). Lalu React Native di tahun kedua. Peran saya di awal hanya
+            sebagai developer, tapi waktu saya keluar, saya sudah menjadi mentor
+            untuk 2 junior react devs dan membantu membuat keputusan teknologi
+            front-end yang akan digunakan di proyek. Produk yang saya kerjakan
+            bernama Moodah, sebuah web dan mobile app yang dijual sebagai SaaS
+            yang menyediakan ERP dengan harga terjangkau untuk UMKM Indonesia.
+            Di sini saya pegang aplikasinya menggunakan React Native, yang
+            berinteraksi dengan backend GraphQL menggunakan Apollo Client.
           </p>
 
           <h4 className="mt-10 text-3xl dark:text-slate-300 font-mono">
             Chapter2: A place called home, IDN
           </h4>
           <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
-            Even though I’m enjoying my time at RubyH, I&apos;m hungry. I&apos;m
-            not learning enough. I know my potential is limitless. Then I
-            decided that I need to move to a new company: IDN. I came to IDN as
-            a mobile developer. But right now I&apos;m happy to call myself just
-            a software engineer. This is because, during my time here, I had to
-            switch between product teams and technologies several times.
+            Even though I&apos;m enjoying my time at RubyH, I&apos;m hungry.
+            I&apos;m not learning enough. I know my potential is limitless. Then
+            I decided that I need to move to a new company: IDN. I came to IDN
+            as a mobile developer. But right now I&apos;m happy to call myself
+            just a software engineer. This is because, during my time here, I
+            had to switch between product teams and technologies several times.
             I&apos;ll try to highlight the most important ones here, as the full
             summary of my journey is available on my CV.
           </p>
