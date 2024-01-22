@@ -37,12 +37,12 @@ export default function About() {
               </span>
             </p>
           </div>
-          <div className="mt-4 text-lg tracking-wide dark:text-slate-300">
+          <div className="mt-4 text-lg tracking-wider dark:text-slate-300">
             Saya adalah seorang profesional di bidang kayasa perangkat lunak
             (RPL), dengan spesialisasi di bidang pengembangan aplikasi web dan
             mobile.
           </div>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             Utamanya, teknologi yang saya kuasai adalah di bidang front-end
             development; tetapi saya juga tertarik pada teknologi backend,
             seperti NodeJS, Golang, Rust. Saat ini, teknologi yang biasa saya
@@ -94,10 +94,10 @@ export default function About() {
           <h4 className="mt-10 text-3xl dark:text-slate-300 font-mono">
             Chapter0: Titik Balik Perjuangan 🇮🇩
           </h4>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             Gue lulusan fisika.
           </p>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             Yup, bukan anak ilmu komputer. Pernah ngoding dikit pake bahasa
             Fortran untuk skripsi. Habis itu gue nganggur setahun lebih setelah
             gue lulus kuliah. Nah, dari situ gue belajar ngoding. 5 hari
@@ -107,14 +107,14 @@ export default function About() {
             untuk nampilin infographics, 1 lagi lupa buat apa. Ini kayaknya gue
             kerjain dalam waktu 1 bulan. Ini disebut portofolio ternyata.
           </p>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             Dulu gue belum tau, tapi dengan portofolio, mentor gue cukup yakin
             gue bisa mulai kerja. Nah, setelah itu gue mulai internship di
             kantor mentor gue selama 2 bulan. Setelah internship dan cocok, gue
             mulai kerja sebagai Junior Frontend Developer. Alhamdulillah.
             Ternyata disitu manfaat <em>ordal</em> 😂.
           </p>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             Jujur kalau dilihat kebelakang, waktu jeda kuliah sampai kerja gue
             cukup lama. 1 tahun lebih dan belum jelas arah mau ngapain. Itu
             rasanya bangun tidur males banget gak tau mau ngapain. Tapi pas udah
@@ -127,7 +127,7 @@ export default function About() {
           <h4 className="mt-10 text-3xl dark:text-slate-300 font-mono">
             Chapter1: A late bachelor degree, RubyH
           </h4>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             Sebagai seorang software engineer yang belajar sendiri, perjalanan
             karir saya dimulai di RubyH. Ini adalah tempat dimana saya belajar
             banyak tentang software development itu sendiri. RubyH sendiri
@@ -138,7 +138,7 @@ export default function About() {
             tentang banyak hal! Dan itu membantu saya untuk tumbuh dengan cepat
             sebagai seorang software engineer.
           </p>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             Tahun pertama di RubyH, kerjaan saya kebanyakan pegang ReactJS
             (web). Lalu React Native di tahun kedua. Peran saya di awal hanya
             sebagai developer, tapi waktu saya keluar, saya sudah menjadi mentor
@@ -153,7 +153,7 @@ export default function About() {
           <h4 className="mt-10 text-3xl dark:text-slate-300 font-mono">
             Chapter2: A place called home, IDN
           </h4>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             Even though I&apos;m enjoying my time at RubyH, I&apos;m hungry.
             I&apos;m not learning enough. I know my potential is limitless. Then
             I decided that I need to move to a new company: IDN. I came to IDN
@@ -164,7 +164,7 @@ export default function About() {
             summary of my journey is available on my CV.
           </p>
 
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             At IDN, I was given a chance to lead a Flutter mobile app
             development called &quot;Pelajar&quot;. I was always curious to try
             Flutter, but this is the first time that I really had the chance to
@@ -177,7 +177,7 @@ export default function About() {
             team. The team consists of 3 mobile devs, 2 backend devs, a QA, and
             a product lead.
           </p>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             The second role I wanted to highlight is when I was asked to help
             the Pordi team. It&apos;s a difficult decision to leave a product
             that I raised like my own child, but I also understand the impact of
@@ -192,7 +192,7 @@ export default function About() {
           <h4 className="mt-10 text-3xl dark:text-slate-300 font-mono">
             Chapter3: A far-far away journey, Mainstream
           </h4>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             At 6 am in the morning, I got a phone call from a recruiter. He ask
             why I haven&apos;t got into the zoom meeting with the potential
             employer. Ouch! Right, I was scheduled for an early meeting to
@@ -202,7 +202,7 @@ export default function About() {
             I&apos;m happy at IDN, but I&apos;m also curious about the new
             opportunity.
           </p>
-          <p className="mt-3 text-lg tracking-wide dark:text-slate-300">
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             Couple of weeks later, I got laid off from IDN. I was sad, but I
             also not too sad as I already have a new opportunity. I joined
             Mainstream as a Fullstack Engineer. Here, I&apos;m working on a
