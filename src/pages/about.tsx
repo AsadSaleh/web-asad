@@ -207,7 +207,20 @@ export default function About() {
             also not too sad as I already have a new opportunity. I joined
             Mainstream as a Fullstack Engineer. Here, I&apos;m working on a
             NextJS project for web3 applications. I&apos;m learning new things
-            here and I&apos; have a fair amount of control of the project.
+            here and I have a fair amount of control of the project.
+          </p>
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
+            In this role, I lerned new technologies, such as Web3 itself,
+            Supabase and Stripe. I feel like my time in early careers when
+            everything is new and the world is a vast unknown place. I also
+            learned a lot about the blockchain, while also giving feedback to
+            the team for code improvements that could lead to better DX.
+            Overall, I&apos;m happy with my time here.
+          </p>
+          <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
+            However, 8 months later, Mainstream decided to let go of me. Now
+            I&apos;m looking for a new opportunity. I&apos;m open to relocation
+            and remote work. If you have any opportunity, please reach me out.
           </p>
 
           <h4 className="mt-10 text-3xl dark:text-slate-300 font-mono">
