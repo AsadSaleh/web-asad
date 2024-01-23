@@ -84,11 +84,11 @@ export default function Home() {
 
         <div className="flex flex-col md:flex-row gap-4 items-center">
           <Image
-            src="/images/profile.jpg"
-            width={80}
-            height={80}
-            alt="As'ad"
-            className="rounded-full"
+            src="/images/profile_pixelized_square.jpeg"
+            width={130}
+            height={130}
+            alt="Pixelized Picture of As'ad"
+            className="rounded-3xl"
           />
           <div>
             <p className="text-xl text-stone-400 italic">
