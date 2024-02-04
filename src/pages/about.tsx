@@ -12,7 +12,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="mx-auto w-screen p-6 bg-white dark:bg-black">
+      <main className="mx-auto w-screen p-6 ">
         <nav className="flex">
           <Link
             href="/"

@@ -13,7 +13,8 @@ export default function Porto() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="mx-auto w-screen p-6 bg-white dark:bg-black">
+
+      <main className="mx-auto w-screen p-6">
         <nav className="flex">
           <Link
             href="/"
@@ -194,17 +195,13 @@ function Card(props: {
   links: { app?: string; github?: string };
 }) {
   return (
-    <div className="p-6 flex flex-col justify-between gap-2 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-slate-900">
+    <div className="p-2 md:p-6 flex flex-col justify-between gap-2 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-slate-900">
       <div>
         {/* Image */}
-        <div className="h-[200px] flex items-center">
+        <div className="h-[200px] flex items-center justify-center">
           {props.imageUrl ? (
-            <Image
-              src={props.imageUrl}
-              alt={props.title}
-              height={300}
-              width={500}
-            />
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={props.imageUrl} alt={props.title} className="h-[200px]" />
           ) : (
             <div className="flex h-[180px] w-full items-center text-sm justify-center bg-slate-800 rounded-md">
               <p className="font-light text-center text-slate-400">No Image</p>
@@ -233,7 +230,7 @@ function Card(props: {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-mono text-[12px] py-2 px-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-white text-slate-800 dark:bg-slate-900 dark:text-white"
+                className="font-mono text-xs py-2 px-3 rounded-xl transition active:scale-90 text-slate-800 bg-stone-200 hover:bg-stone-300 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
               >
                 GitHub
               </a>
@@ -245,7 +242,7 @@ function Card(props: {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-[12px] py-2 px-3 border-[0.5px] border-[#6C6C6C] rounded-xl bg-white text-slate-800 dark:bg-stone-900 dark:text-white"
+              className="font-mono text-xs py-2 px-3 rounded-xl transition active:scale-90 text-slate-800 bg-stone-200 hover:bg-stone-300 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
             >
               Open App
             </a>
