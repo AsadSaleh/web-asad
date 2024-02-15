@@ -98,7 +98,7 @@ export default function Home() {
             </p>
             <p className="text-xl md:text-4xl dark:text-white">
               <span>My name is&nbsp;</span>
-              <span className="">As&apos;ad</span>
+              <span className="">As&apos;ad Ghanim</span>
             </p>
             <p className="text-lg md:text-3xl dark:text-white">
               I&apos;m a{" "}

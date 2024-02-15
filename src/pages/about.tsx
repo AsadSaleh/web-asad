@@ -33,7 +33,7 @@ export default function About() {
             <p>
               <span>Nama saya&nbsp;</span>
               <span className="text-orange-600 font-semibold">
-                As&apos;ad Saleh Umar
+                As&apos;ad Saleh Umar Ghanim
               </span>
             </p>
           </div>
