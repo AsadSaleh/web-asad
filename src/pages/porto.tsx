@@ -200,8 +200,12 @@ function Card(props: {
         {/* Image */}
         <div className="h-[200px] flex items-center justify-center">
           {props.imageUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={props.imageUrl} alt={props.title} className="h-[200px]" />
+            <Image
+              src={props.imageUrl}
+              alt={props.title}
+              width={400}
+              height={200}
+            />
           ) : (
             <div className="flex h-[180px] w-full items-center text-sm justify-center bg-slate-800 rounded-md">
               <p className="font-light text-center text-slate-400">No Image</p>
