@@ -1,4 +1,4 @@
-import ArrowLeftIcon from "@/icon/arrow-left";
+import ArrowLeftIcon from "@/app/_icon/arrow-left";
 import Head from "next/head";
 import Link from "next/link";
 

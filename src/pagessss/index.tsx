@@ -1,11 +1,11 @@
-import DocumentDuplicateIcon from "@/icon/document-duplicate";
-import ArrowRightIcon from "@/icon/arrow-right";
-import ArrowUpRightIcon from "@/icon/arrow-up-right";
+import DocumentDuplicateIcon from "@/app/_icon/document-duplicate";
+import ArrowRightIcon from "@/app/_icon/arrow-right";
+import ArrowUpRightIcon from "@/app/_icon/arrow-up-right";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import CheckIcon from "@/icon/check";
+import CheckIcon from "@/app/_icon/check";
 
 export default function Home() {
   const [coppied, setCoppied] = useState(false);
