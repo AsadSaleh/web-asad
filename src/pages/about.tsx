@@ -112,7 +112,11 @@ export default function About() {
             gue bisa mulai kerja. Nah, setelah itu gue mulai internship di
             kantor mentor gue selama 2 bulan. Setelah internship dan cocok, gue
             mulai kerja sebagai Junior Frontend Developer. Alhamdulillah.
-            Ternyata disitu manfaat <em>ordal</em> 😂.
+            Ternyata selama ini gue dikader untuk menjadi programmer,&nbsp;
+            <span className="italic">
+              that&apos;s my realization after 3 years working
+            </span>
+            .
           </p>
           <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
             Jujur kalau dilihat kebelakang, waktu jeda kuliah sampai kerja gue
