@@ -31,7 +31,7 @@ export default function EmailWithCopy() {
       className="glow font-mono text-xs p-4 rounded-xl bg-red-700 text-white flex items-center active:scale-95 transition gap-2"
       type="button"
     >
-      Mail
+      Email
       {coppied ? (
         <CheckIcon className="w-4 h-4 text-white font-bold" />
       ) : (
