@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="mx-auto w-screen p-6 ">
+    <main className="mx-auto w-screen p-4 md:p-6">
       <nav className="flex">
         <Link
           href="/"

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Porto() {
   return (
-    <main className="mx-auto w-screen p-6">
+    <main className="mx-auto w-screen p-4 md:p-6">
       <nav className="flex">
         <Link
           href="/"
@@ -39,6 +39,7 @@ export default function Porto() {
             links={{
               app: "https://lumbungdana.co.id/",
             }}
+            year="2018"
           />
 
           {/* Moodah */}
@@ -49,13 +50,14 @@ export default function Porto() {
             /> */}
 
           {/* Transfez */}
-          {/* <PortoCard
-              title="Transfez mobile app"
-              desc="Aplikasi Android & iOS untuk mengirim uang ke luar negeri"
-              links={{
-                app: "https://play.google.com/store/apps/details?id=com.indokoala.transfez&hl=id&gl=US",
-              }}
-            /> */}
+          <PortoCard
+            title="Transfez mobile app"
+            desc="Aplikasi Android & iOS untuk mengirim uang ke luar negeri"
+            links={{
+              app: "https://play.google.com/store/apps/details?id=com.indokoala.transfez&hl=id&gl=US",
+            }}
+            year="2019"
+          />
 
           {/* IDF */}
           <PortoCard
@@ -63,6 +65,7 @@ export default function Porto() {
             desc="Website untuk mengenalkan Yayasan IDF kepada masyarakat"
             imageUrl="/images/idf.png"
             links={{ app: "https://infradigitalfoundation.netlify.app/" }}
+            year="2020"
           />
 
           {/* Iyada */}
@@ -71,6 +74,7 @@ export default function Porto() {
             desc="Website untuk mengenalkan PT Iyada kepada masyarakat"
             imageUrl="/images/iyada.png"
             links={{ app: "https://iyada.id/" }}
+            year="2020"
           />
 
           {/* Pelajar */}
@@ -81,6 +85,7 @@ export default function Porto() {
             links={{
               app: "https://play.google.com/store/apps/details?id=io.infradigital.app.pelajar&hl=en_US",
             }}
+            year="2021"
           />
 
           {/* Pordi */}
@@ -91,6 +96,7 @@ export default function Porto() {
             links={{
               app: "https://pordi.infradigital.io/",
             }}
+            year="2021"
           />
 
           {/* Pager */}
@@ -101,6 +107,7 @@ export default function Porto() {
             links={{
               app: "https://app.getpager.xyz/onboarding",
             }}
+            year="2023"
           />
         </div>
 
@@ -115,6 +122,7 @@ export default function Porto() {
               app: "https://globaltimedetector.vercel.app/",
               github: "https://github.com/AsadSaleh/detect-time",
             }}
+            year="2023"
           />
 
           {/* TimeToSync */}
@@ -126,6 +134,7 @@ export default function Porto() {
               app: "https://timetosync.netlify.app/",
               github: "https://github.com/AsadSaleh/time-ui",
             }}
+            year="2022"
           />
 
           {/* Pajakin */}
@@ -137,6 +146,7 @@ export default function Porto() {
               app: "https://pajakin.vercel.app/",
               github: "https://github.com/AsadSaleh/pajakin",
             }}
+            year="2023"
           />
 
           {/* Is it Retina? */}
@@ -148,6 +158,7 @@ export default function Porto() {
               app: "https://is-it-retina.vercel.app/",
               github: "https://github.com/AsadSaleh/is_it_retina",
             }}
+            year="2023"
           />
 
           {/* React native */}
@@ -158,6 +169,7 @@ export default function Porto() {
             links={{
               github: "https://github.com/AsadSaleh/flip_react_native_app",
             }}
+            year="2022"
           />
 
           {/* Drop em */}
@@ -166,15 +178,18 @@ export default function Porto() {
             desc="Component example for creating Drag & Drop file in React"
             links={{ github: "https://github.com/AsadSaleh/drop-em" }}
             imageUrl=""
+            year="2021"
           />
 
           {/* This website */}
           <PortoCard
             title="This website"
-            desc=""
+            desc="My personal website built with Next.js and TailwindCSS"
             links={{
               github: "https://github.com/AsadSaleh/web-asad",
             }}
+            imageUrl="/images/web-asad.png"
+            year="2023"
           />
         </div>
       </section>
