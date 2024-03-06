@@ -23,7 +23,7 @@ export default function Porto() {
 
       <section className="max-w-3xl mx-auto">
         <h1 className="text-3xl dark:text-white">Portfolio</h1>
-        <h4 className="text-xl dark:text-slate-500">
+        <h4 className="text-xl text-slate-700 dark:text-slate-500">
           My work & hobby projects are listed here
         </h4>
 
@@ -172,7 +172,6 @@ export default function Porto() {
           <PortoCard
             title="This website"
             desc=""
-            imageUrl="/images/website.png"
             links={{
               github: "https://github.com/AsadSaleh/web-asad",
             }}

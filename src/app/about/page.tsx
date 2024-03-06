@@ -22,7 +22,7 @@ export default function About() {
 
       <section className="max-w-3xl mx-auto">
         <h1 className="text-3xl dark:text-white">About me</h1>
-        <h4 className="mb-4 text-xl dark:text-slate-500">
+        <h4 className="mb-4 text-xl text-slate-700 dark:text-slate-500">
           A not so organized story about me
         </h4>
 
@@ -90,7 +90,7 @@ export default function About() {
           </div>
         </div>
 
-        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2">
+        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter0: Titik Balik Perjuangan 🇮🇩
         </h4>
         <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
@@ -127,7 +127,7 @@ export default function About() {
           internet, client-server, API, dan sebagainya.
         </p>
 
-        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2">
+        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter1: A late bachelor degree, RubyH
         </h4>
         <p className="mt-3 text-lg dark:text-slate-300">
@@ -153,7 +153,7 @@ export default function About() {
           dengan backend GraphQL menggunakan Apollo Client.
         </p>
 
-        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2">
+        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter2: A place called home, IDN
         </h4>
         <p className="mt-3 text-lg dark:text-slate-300">
@@ -190,7 +190,7 @@ export default function About() {
           use git rebase daily. At the end of the day, the web app is released.
         </p>
 
-        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2">
+        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter3: A far-far away journey, Mainstream
         </h4>
         <p className="mt-3 text-lg dark:text-slate-300">
