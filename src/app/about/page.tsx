@@ -141,7 +141,7 @@ export default function About() {
           Dan itu membantu saya untuk tumbuh dengan cepat sebagai seorang
           software engineer.
         </p>
-        <p className="mt-3 text-lgdark:text-slate-300">
+        <p className="mt-3 text-lg dark:text-slate-300">
           Tahun pertama di RubyH, kerjaan saya kebanyakan pegang ReactJS (web).
           Lalu React Native di tahun kedua. Peran saya di awal hanya sebagai
           developer, tapi waktu saya keluar, saya sudah menjadi mentor untuk 2
