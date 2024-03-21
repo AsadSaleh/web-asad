@@ -48,7 +48,6 @@ export default function Home() {
           Latest CV
         </a>
       </div>
-
       <div className="flex flex-col md:flex-row gap-4 items-center">
         <Image
           src="/images/profile_pixelized_square.jpeg"
@@ -102,7 +101,7 @@ export default function Home() {
               <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
             </h2>
             <p className="text-sm md:text-lg text-white dark:text-white">
-              Read a boring stroy about my journey
+              Read a boring story about my journey
             </p>
           </div>
         </Link>
