@@ -4,7 +4,11 @@ import CheckIcon from "@/app/_icon/check";
 import DocumentDuplicateIcon from "@/app/_icon/document-duplicate";
 import { useEffect, useState } from "react";
 
-export default function EmailWithCopy() {
+export default function EmailWithCopy({
+  scramble = false,
+}: {
+  scramble?: boolean;
+}) {
   const [coppied, setCoppied] = useState(false);
 
   async function copyEmailToClipboard() {
@@ -28,7 +32,8 @@ export default function EmailWithCopy() {
   return (
     <button
       onClick={copyEmailToClipboard}
-      className="glow font-mono text-xs p-4 rounded-xl bg-red-700 text-white flex items-center active:scale-95 transition gap-2"
+      data-scramble={scramble}
+      className="h-min hover:scale-110 font-mono text-xs p-4 rounded-xl bg-red-700 text-white flex items-center active:scale-95 gap-2 transition-all duration-300 data-[scramble=true]:mt-10 data-[scramble=true]:rotate-3"
       type="button"
     >
       Email
