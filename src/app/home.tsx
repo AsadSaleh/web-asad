@@ -51,11 +51,11 @@ export default function Home() {
             className="rotate-0 data-[scrambled=true]:rotate-6 group p-1 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 active:scale-95 transition-all"
           >
             <div className="w-full p-4 md:px-8 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-              <h2 className="text-xl md:text-3xl flex items-center gap-2 dark:text-white">
+              <h2 className="text-xl md:text-3xl flex items-center gap-2 text-white dark:text-white">
                 <span>Portfolio</span>
                 <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
               </h2>
-              <p className="text-sm md:text-lg dark:text-slate-300">
+              <p className="text-sm md:text-lg text-white dark:text-slate-300">
                 Let&apos;s see As&apos;ad&apos;s playing cards
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function Home() {
       <footer className="mt-20">
         <p className="dark:text-white">Please fix this site 😢</p>
         <button
-          className="dark:text-white py-2 px-4 bg-slate-800 rounded-lg mt-4 active:scale-90 transition-all duration-300"
+          className="text-slate-800 bg-slate-200 dark:text-white py-2 px-4 dark:bg-slate-800 rounded-lg mt-4 active:scale-90 transition-all duration-300"
           onClick={() => setScrambled((p) => !p)}
         >
           {scrambled ? "Fix it! 🔨" : "Break it 🔥"}

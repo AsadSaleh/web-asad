@@ -30,9 +30,10 @@ export default function Porto() {
         <h3 className="mt-10 text-xl dark:text-white">
           Selected Work Projects
         </h3>
-        <h4 className="dark:text-slate-400">
-          Ini adalah kerjaan kantor. Biasanya kami buat bersama tim. Tapi ada
-          juga beberapa yang buat sendiri{" "}
+        <h4 className="text-slate-700 dark:text-slate-400">
+          Ini adalah beberapa kerjaan kantor pilihan. Aplikasi yang saya
+          cantumkan disini biasanya saya ngerti 100% flownya. Oiya, beberapa
+          saya buat bersama tim. Tapi ada juga beberapa yang buat sendiri{" "}
           <span className="italic">from scratch</span>, baru{" "}
           <span className="italic">later</span> dikerjakan bersama tim.
         </h4>
@@ -86,7 +87,7 @@ export default function Porto() {
           />
           <PortoCard
             title="Transfez mobile app"
-            desc="Aplikasi Android & iOS untuk mengirim uang ke luar negeri"
+            desc="Aplikasi Android & iOS untuk mengirim uang ke luar negeri (Sudah direvamp dari iterasi awal)"
             links={{
               app: "https://play.google.com/store/apps/details?id=com.indokoala.transfez&hl=id&gl=US",
             }}
@@ -104,11 +105,14 @@ export default function Porto() {
         </div>
 
         <h3 className="mt-10 text-xl dark:text-white">Hobby Projects</h3>
-        <h4 className="dark:text-slate-400">
+        <h4 className="text-slate-700 dark:text-slate-400">
           Ini adalah kerjaan yang saya buat sendiri, biasanya saya buat karena
-          keresahan atas suatu masalah. Misal Pajakin: karena ngitung pajak
-          susah. Atau TimeToSync, karena pengen tau cepet beberapa waktu
-          timezone temen ketika kerja remote.
+          keresahan atas suatu masalah. Misal{" "}
+          <span className="font-semibold">Tangga Belajar</span>: Biar bisa
+          ngajar ngoding buat pemula secara masif.{" "}
+          <span className="font-semibold">Pajakin</span>: karena ngitung pajak
+          susah. Atau <span className="font-semibold">TimeToSync</span>, untuk
+          tau dengan cepet waktu temen kantor ketika kerja remote.
         </h4>
         <div className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-4 ">
           <PortoCard
