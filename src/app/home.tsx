@@ -113,7 +113,12 @@ export default function Home() {
         </a>
       </div>
       <footer className="mt-20">
-        <p className="dark:text-white">Please fix this site 😢</p>
+        <p
+          className="dark:text-white data-[hide=true]:hidden"
+          data-hide={!scrambled}
+        >
+          Please fix this site 😢
+        </p>
         <button
           className="text-slate-800 bg-slate-200 dark:text-white py-2 px-4 dark:bg-slate-800 rounded-lg mt-4 active:scale-90 transition-all duration-300"
           onClick={() => setScrambled((p) => !p)}
