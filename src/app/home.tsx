@@ -12,13 +12,17 @@ function useLocaleStorageState<T>(
   defaultValue: T
 ): [T, (value: T) => void] {
   const [state, setState] = useState(() => {
-    const value = window.localStorage.getItem(key);
-    return value ? JSON.parse(value) : defaultValue;
+    if (typeof window !== "undefined") {
+      const value = window.localStorage.getItem(key);
+      return value ? JSON.parse(value) : defaultValue;
+    }
   });
 
   const setLocalStorageState = (value: T) => {
     setState(value);
-    window.localStorage.setItem(key, JSON.stringify(value));
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    }
   };
 
   return [state, setLocalStorageState];
