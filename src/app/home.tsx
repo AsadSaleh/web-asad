@@ -7,11 +7,31 @@ import Link from "next/link";
 import SocialLinks from "./social-links";
 import { useState } from "react";
 
+function useLocaleStorageState<T>(
+  key: string,
+  defaultValue: T
+): [T, (value: T) => void] {
+  const [state, setState] = useState(() => {
+    const value = window.localStorage.getItem(key);
+    return value ? JSON.parse(value) : defaultValue;
+  });
+
+  const setLocalStorageState = (value: T) => {
+    setState(value);
+    window.localStorage.setItem(key, JSON.stringify(value));
+  };
+
+  return [state, setLocalStorageState];
+}
+
 export default function Home() {
-  const [scrambled, setScrambled] = useState(true);
+  const [scrambled, setScrambled] = useLocaleStorageState(
+    "web:asad:scramble",
+    true
+  );
 
   return (
-    <main className="max-w-lg md:max-w-4xl mx-auto py-8 md:py-20 px-4">
+    <main className="max-w-lg md:max-w-2xl mx-auto py-8 md:py-20">
       <SocialLinks scrambled={scrambled} />
 
       <div className="mt-20 flex flex-col md:flex-row gap-4 items-center justify-center">
@@ -38,12 +58,26 @@ export default function Home() {
             </span>{" "}
             from Indonesia.
           </p>
+          <div className="flex items-center justify-start gap-2">
+            <p
+              className="dark:text-stone-400 text-stone-500 data-[hide=true]:hidden"
+              data-hide={!scrambled}
+            >
+              Please fix this site 😢
+            </p>
+            <button
+              className="text-slate-800 bg-slate-200 dark:text-white py-2 px-4 dark:bg-slate-800 rounded-lg active:scale-90 transition-all duration-300"
+              onClick={() => setScrambled(!scrambled)}
+            >
+              {scrambled ? "Fix it! 🔨" : "Break it 🔥"}
+            </button>
+          </div>
         </div>
       </div>
 
       <div
         data-scrambled={scrambled}
-        className="mt-20 animate-none data-[scrambled=true]:animate-float data-[scrambled=true]:mt-40"
+        className="px-2 mt-20 animate-none data-[scrambled=true]:animate-float-2 data-[scrambled=true]:mt-40"
       >
         <Link href="/porto">
           <div
@@ -65,8 +99,8 @@ export default function Home() {
 
       <div
         data-scrambled={scrambled}
-        className="mt-6 animate-none data-[scrambled=true]:animate-float"
-        style={{ animationDelay: "0.5s" }}
+        className="px-2 mt-6 animate-none data-[scrambled=true]:animate-float"
+        style={{ animationDelay: "0.75s" }}
       >
         <Link href="/about">
           <div
@@ -88,8 +122,8 @@ export default function Home() {
 
       <div
         data-scrambled={scrambled}
-        className="mt-6 animate-none data-[scrambled=true]:animate-float data-[scrambled=true]:mt-14"
-        style={{ animationDelay: "0.8s" }}
+        className="px-2 mt-6 animate-none data-[scrambled=true]:animate-float data-[scrambled=true]:mt-14"
+        style={{ animationDelay: "1.5s" }}
       >
         <a
           href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
@@ -112,19 +146,10 @@ export default function Home() {
           </div>
         </a>
       </div>
-      <footer className="mt-20">
-        <p
-          className="dark:text-white data-[hide=true]:hidden"
-          data-hide={!scrambled}
-        >
-          Please fix this site 😢
+      <footer className="mt-20 px-2">
+        <p className="text-xs text-center text-stone-400 dark:text-stone-500">
+          © {new Date().getFullYear()} As&apos;ad Ghanim. All rights reserved.
         </p>
-        <button
-          className="text-slate-800 bg-slate-200 dark:text-white py-2 px-4 dark:bg-slate-800 rounded-lg mt-4 active:scale-90 transition-all duration-300"
-          onClick={() => setScrambled((p) => !p)}
-        >
-          {scrambled ? "Fix it! 🔨" : "Break it 🔥"}
-        </button>
       </footer>
     </main>
   );

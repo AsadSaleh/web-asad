@@ -90,7 +90,7 @@ export default function About() {
           </div>
         </div>
 
-        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-60  text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter0: Titik Balik Perjuangan 🇮🇩
         </h4>
         <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
@@ -127,9 +127,16 @@ export default function About() {
           internet, client-server, API, dan sebagainya.
         </p>
 
-        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter1: A late bachelor degree, RubyH
         </h4>
+        <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-stone-200 rounded-md px-6 py-4">
+          Jakarta, Indonesia. Full time. RubyH is an Indonesian software house
+          that helps startups/companies outsource their tech needs. We work with
+          clients including PwC, Midtrans, Akseleran, Transfez, etc. Tech stack
+          includes: React, Redux, ReduxForm, React Native, TypeScript, Apollo
+          GraphQL.
+        </div>
         <p className="mt-3 text-lg dark:text-slate-300">
           Sebagai seorang software engineer yang belajar sendiri, perjalanan
           karir saya dimulai di RubyH. Ini adalah tempat dimana saya belajar
@@ -146,16 +153,51 @@ export default function About() {
           Lalu React Native di tahun kedua. Peran saya di awal hanya sebagai
           developer, tapi waktu saya keluar, saya sudah menjadi mentor untuk 2
           junior react devs dan membantu membuat keputusan teknologi front-end
-          yang akan digunakan di proyek. Produk yang saya kerjakan bernama
-          Moodah, sebuah web dan mobile app yang dijual sebagai SaaS yang
-          menyediakan ERP dengan harga terjangkau untuk UMKM Indonesia. Di sini
-          saya pegang aplikasinya menggunakan React Native, yang berinteraksi
-          dengan backend GraphQL menggunakan Apollo Client.
+          yang akan digunakan di proyek. Salah satu produk yang kami kerjakan
+          adalah ERP untuk SMEs. Dibungkus menjadi solusi web dan mobile app
+          yang dijual sebagai SaaS yang menyediakan ERP dengan harga terjangkau
+          untuk UMKM Indonesia. Di sini saya pegang aplikasinya menggunakan
+          React Native, yang berinteraksi dengan backend GraphQL menggunakan
+          Apollo Client.
         </p>
 
-        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter2: A place called home, IDN
         </h4>
+        <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-stone-200 rounded-md px-6 py-4">
+          Jakarta, Indonesia. Full time. Infradigital is a B2B Edtech Startup
+          providing financial, compliance & supply chain services to over 20,000
+          low-income schools. I was a part of the engineering team, tasked with
+          developing & maintaining the apps & services. Tech stack including:
+          Flutter, React, NextJS, Go, NodeJS, Android (Java), and Redis.
+          <p className="font-bold mt-4">Key achievements:</p>
+          <ol className="list-decimal list-inside">
+            <li>
+              I maintain an existing Android and NodeJS app for student payment.
+              We successfully decreased the number of crashes significantly.
+            </li>
+            <li>
+              Lead the mobile team to build a new cross-platform (Flutter)
+              mobile app from scratch with main features: online payment,
+              student&apos;s records & file uploads, student financing, and
+              newsfeed. I act as a mobile lead &ndash; leading a team of 3. We
+              develop the app to 100K downloads in Google Play Store.
+            </li>
+            <li>
+              Assist my company in obtaining PTD (Penyelenggara Transfer Dana)
+              certification from Bank Indonesia
+            </li>
+            <li>
+              Build internal web-based tools to help the sales team generate MoU
+              documents on the fly.
+            </li>
+            <li>
+              Promoted to engineering manager and technical leader for the
+              Frontend and Mobile development teams. Leading a total of 5
+              software engineers across 2 teams.
+            </li>
+          </ol>
+        </div>
         <p className="mt-3 text-lg dark:text-slate-300">
           Even though I&apos;m enjoying my time at RubyH, I&apos;m hungry.
           I&apos;m not learning enough. I know my potential is limitless. Then I
@@ -179,6 +221,22 @@ export default function About() {
           between Engineering, Product, and Customer Support team. The team
           consists of 3 mobile devs, 2 backend devs, a QA, and a product lead.
         </p>
+
+        <p className="mt-3 text-lg dark:text-slate-300">
+          My most challenging problems is when I implement offline-support for
+          Pelajar&apos;s Flutter app. I write a local store which allows form
+          data to be saved even though there is no internet connection, then it
+          will automatically sync to our DB when the connection is back online.
+          The experience is really thrilling because our boss wanted this
+          feature in MVP, but we&apos;re clueless at that time, because Flutter
+          is new to all of us. With extensive discussion with peers, we managed
+          to pull it off in like 3 weeks time. The first 2 weeks is like banging
+          my head around the wall. Everything seems too hard to work. However,
+          after several iteration, it clicked and we can write the simple yet
+          effective implementation. We tested it, it worked, and deployed it to
+          production.
+        </p>
+
         <p className="mt-3 text-lg dark:text-slate-300">
           The second role I wanted to highlight is when I was asked to help the
           Pordi team. It&apos;s a difficult decision to leave a product that I
@@ -190,9 +248,45 @@ export default function About() {
           use git rebase daily. At the end of the day, the web app is released.
         </p>
 
-        <h4 className="mt-10 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+          Chapter2.2: Introduction to teaching
+        </h4>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          Lecturer & mentor at DigiTalent Scholarship&apos;s Frontend Class
+        </p>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          Jakarta, Indonesia. Part time. We teach JavaScript & React in a
+          3-months online course to 20+ students in Digitalent Scholarship (DTS)
+          2021, a program held by Indonesia&apos;s Ministry of Communication &
+          Informatics. Course material consists of delivering theory through
+          online class & mentoring student&apos;s final project.
+        </p>
+
+        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+          Chapter2.7: More teaching
+        </h4>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          Lecturer & mentor at Binar Academy&apos;s
+        </p>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          Jakarta, Indonesia. Part time. We facilitate a class (10-person,
+          6-months program) to be excellent at full-stack web development by
+          delivering course material accompanied by live coding examples &
+          mentoring student&apos;s final project.
+        </p>
+
+        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter3: A far-far away journey, Mainstream
         </h4>
+        <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-stone-200 rounded-md px-6 py-4">
+          US, Remote. MainstreamLabs is a startup with a vision to provide a
+          governance platform for web3 organizations. Tech stack includes:
+          NextJS 14 (RSC), Stripe API, NodeJS, Supabase. As a Full-Stack
+          Developer, I helped the team to polish the previous app, which is a
+          twitter-like web3 app for users to manage & follow their interest in
+          available DAOs. I also helped the team develop a new app -a
+          notification service SaaS- from scratch to production in record time.
+        </div>
         <p className="mt-3 text-lg dark:text-slate-300">
           At 6 am in the morning, I got a phone call from a recruiter. He ask
           why I haven&apos;t got into the zoom meeting with the potential
@@ -203,27 +297,62 @@ export default function About() {
           IDN, but I&apos;m also curious about the new opportunity.
         </p>
         <p className="mt-3 text-lg dark:text-slate-300">
-          Couple of weeks later, I got laid off from IDN. I was sad, but I also
-          not too sad as I already have a new opportunity. I joined Mainstream
-          as a Fullstack Engineer. Here, I&apos;m working on a NextJS project
-          for web3 applications. I&apos;m learning new things here and I have a
-          fair amount of control of the project.
+          Couple of weeks later, I got laid off from IDN. I was sad, but
+          thankfully I have a next place to go. I joined Mainstream as a
+          Fullstack Engineer. Here, I&apos;m working on a NextJS project for
+          web3 applications. I&apos;m learning new things here and I have a fair
+          amount of control of the project.
         </p>
         <p className="mt-3 text-lg dark:text-slate-300">
           In this role, I lerned new technologies, such as Web3 itself, Supabase
-          and Stripe. I feel like my time in early careers when everything is
-          new and the world is a vast unknown place. I also learned a lot about
-          the blockchain, while also giving feedback to the team for code
-          improvements that could lead to better DX. Overall, I&apos;m happy
-          with my time here.
+          and Stripe. I feel just like my time in early careers, when everything
+          is new and the world is a vast unknown place. I also learned a lot
+          about the blockchain, the terms used in crypto world, and basic things
+          in blockchain that I think I know, but turns out I don&apos;t know.
+          Overall, I&apos;m happy with my time here.
         </p>
         <p className="mt-3 text-lg dark:text-slate-300">
-          However, 8 months later, Mainstream decided to let go of me. Now
-          I&apos;m looking for a new opportunity. I&apos;m open to relocation
-          and remote work. If you have any opportunity, please reach me out.
+          However, 8 months later, Mainstream and I can&apos;t go toghether
+          anymore (the L word). It was hard, however I respect their decision.
+          In the end, it has been a good experience and I met good friends
+          there.
         </p>
 
-        <h4 className="mt-10 text-3xl dark:text-slate-300 font-mono">
+        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+          Chapter4: Alone in the dark
+        </h4>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          It&apos;s been a month since I left Mainstream. To be without a job is
+          hard. How do we keep our head sharp?
+        </p>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          Maybe I need to grind LeetCode?
+        </p>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          Or maybe, should I re-create LeetCode?
+        </p>
+        <p className="mt-3 text-lg dark:text-slate-300">Thus....</p>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          2 months later I created an online learning course from scratch called{" "}
+          <a className="text-orange-500" href="https://tanggabelajar.id">
+            Tangga Belajar
+          </a>
+          &nbsp;which focuses on self-paced code learning, similar to LeetCode.
+          The site is up and running. It focuses on helping fellow Indonesians
+          so all content is in Bahasa Indonesia. It has a generous free course
+          with 100 topics and questions, and a paid course coming soon.
+        </p>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          It&apos;s created with NextJs, NodeJs (Fastify), Docker, Neon
+          Postgres. Hosted in Vercel and Contabo. The platform is 100%
+          completed, but I am still working on inserting reading materials and
+          questions.
+        </p>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          Go check it out! And make sure to tell people about it 😊
+        </p>
+
+        <h4 className="mt-60 text-3xl dark:text-slate-300 font-mono">
           The story continues...
         </h4>
       </section>
