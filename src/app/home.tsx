@@ -62,7 +62,7 @@ export default function Home() {
             </span>{" "}
             from Indonesia.
           </p>
-          <div className="flex items-center justify-start gap-2">
+          <div className="flex items-center justify-center md:justify-start gap-2">
             <p
               className="dark:text-stone-400 text-stone-500 data-[hide=true]:hidden"
               data-hide={!scrambled}
