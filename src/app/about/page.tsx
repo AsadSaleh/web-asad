@@ -94,28 +94,36 @@ export default function About() {
           Chapter0: Titik Balik Perjuangan 🇮🇩
         </h4>
         <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
-          Gue lulusan fisika.
+          Sabtu, 2 September 2017.
         </p>
         <p className="mt-3 text-lg dark:text-slate-300">
-          Yup, bukan anak ilmu komputer. Pernah ngoding dikit pake bahasa
-          Fortran untuk skripsi. Habis itu gue nganggur setahun lebih setelah
-          gue lulus kuliah. Nah, dari situ gue belajar ngoding. 5 hari seminggu,
-          8 jam sehari. Selama 6 bulan. Yang gue pelajari mulai dari HTML, CSS,
-          JavaScript, dan terakhir React. Setelah gue bisa React, gue bikin 3
-          website sederhana. 1 buat nampilin informasi cuaca, 1 untuk nampilin
-          infographics, 1 lagi lupa buat apa. Ini kayaknya gue kerjain dalam
-          waktu 1 bulan. Ini disebut portofolio ternyata.
+          Yup, itu dia waktunya. Sehari setelah lebaran idul adha. Tanggal yang
+          mengubah segalanya. Dari seorang tanpa penghasilan, menjadi seorang
+          yang bisa menghasilkan uang sendiri. Dari seorang yang tidak punya
+          pekerjaan, menjadi seorang yang bisa bekerja. Dari seorang yang tidak
+          punya masa depan, menjadi seorang yang punya masa depan. Dari seorang
+          yang tidak punya tujuan, menjadi seorang yang punya tujuan. Dari
+          seorang yang tidak punya mimpi, menjadi seorang yang punya mimpi.
+          <br />
+          Puitis sekali ya. Tapi ini bener loh.
+        </p>
+        <p className="mt-3 text-lg dark:text-slate-300">
+          Gue lulusan Fisika, bukan anak ilmu komputer. Pernah ngoding dikit
+          pake bahasa Fortran untuk skripsi. Habis itu gue nganggur setahun
+          lebih setelah gue lulus kuliah. Nah, dari situ gue belajar ngoding. 5
+          hari seminggu, 8 jam sehari. Selama 6 bulan. Yang gue pelajari mulai
+          dari HTML, CSS, JavaScript, dan terakhir React. Setelah gue bisa
+          React, gue bikin 3 website sederhana. 1 buat nampilin informasi cuaca,
+          1 untuk nampilin infographics, 1 lagi lupa buat apa. Ini kayaknya gue
+          kerjain dalam waktu 1 bulan. Ini disebut portofolio ternyata.
         </p>
         <p className="mt-3 text-lg dark:text-slate-300">
           Dulu gue belum tau, tapi dengan portofolio, mentor gue cukup yakin gue
           bisa mulai kerja. Nah, setelah itu gue mulai internship di kantor
           mentor gue selama 2 bulan. Setelah internship dan cocok, gue mulai
           kerja sebagai Junior Frontend Developer. Alhamdulillah. Ternyata
-          selama ini gue dikader untuk menjadi programmer,&nbsp;
-          <span className="italic">
-            that&apos;s my realization after 3 years working
-          </span>
-          .
+          selama ini gue dikader untuk menjadi programmer. Gue seneng banget
+          bisa kerja sebagai programmer.
         </p>
         <p className="mt-3 text-lg dark:text-slate-300">
           Jujur kalau dilihat kebelakang, waktu jeda kuliah sampai kerja gue
