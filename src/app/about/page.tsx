@@ -1,6 +1,7 @@
 import ArrowLeftIcon from "@/app/_icon/arrow-left";
 import Link from "next/link";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About - As'ad Personal Site",
@@ -48,7 +49,7 @@ export default function About() {
         </p>
 
         {/* Tech Stack */}
-        <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-slate-300 p-4 rounded">
+        <div className="mt-8 bg-stone-200 dark:bg-stone-800 dark:text-slate-300 p-4 rounded">
           <h4 className="md:text-3xl font-semibold tracking-wider dark:text-white text-left">
             Teknologi yang dikuasai
           </h4>
@@ -74,12 +75,15 @@ export default function About() {
             <p>Dart</p>
             <p>Flutter</p>
             <p>Android</p>
+            <p>Go</p>
           </div>
 
           <h5 className="mt-4 md:text-2xl font-semibold tracking-wider">
             Alat lainnya
           </h5>
           <div className="mt-2 flex gap-x-4 gap-y-2 flex-wrap items-center justify-start text-slate-600 dark:text-slate-300">
+            <p>PM2</p>
+            <p>Linux VPS</p>
             <p>Vercel</p>
             <p>Supabase</p>
             <p>Docker</p>
@@ -90,7 +94,15 @@ export default function About() {
           </div>
         </div>
 
-        <h4 className="mt-60  text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <Image
+          src="/images/arrow_down_1.svg"
+          alt="arrow down"
+          width={60}
+          height={60}
+          className="rounded-3xl my-20 self-center mx-auto"
+        />
+
+        <h4 className="mt-20  text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter0: Titik Balik Perjuangan 🇮🇩
         </h4>
         <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
@@ -135,7 +147,15 @@ export default function About() {
           internet, client-server, API, dan sebagainya.
         </p>
 
-        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <Image
+          src="/images/arrow_down_3.svg"
+          alt="arrow down"
+          width={100}
+          height={100}
+          className="rounded-3xl my-20 self-center mx-auto"
+        />
+
+        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter1: A late bachelor degree, RubyH
         </h4>
         <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-stone-200 rounded-md px-6 py-4">
@@ -169,7 +189,15 @@ export default function About() {
           Apollo Client.
         </p>
 
-        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <Image
+          src="/images/arrow_down_5.svg"
+          alt="arrow down"
+          width={60}
+          height={60}
+          className="rounded-3xl my-20 self-center mx-auto"
+        />
+
+        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter2: A place called home, IDN
         </h4>
         <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-stone-200 rounded-md px-6 py-4">
@@ -256,7 +284,15 @@ export default function About() {
           use git rebase daily. At the end of the day, the web app is released.
         </p>
 
-        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <Image
+          src="/images/arrow_down_1.svg"
+          alt="arrow down"
+          width={60}
+          height={60}
+          className="rounded-3xl my-20 self-center mx-auto"
+        />
+
+        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter2.2: Introduction to teaching
         </h4>
         <p className="mt-3 text-lg dark:text-slate-300">
@@ -270,7 +306,15 @@ export default function About() {
           online class & mentoring student&apos;s final project.
         </p>
 
-        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <Image
+          src="/images/arrow_down_3.svg"
+          alt="arrow down"
+          width={100}
+          height={100}
+          className="rounded-3xl my-20 self-center mx-auto"
+        />
+
+        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter2.7: More teaching
         </h4>
         <p className="mt-3 text-lg dark:text-slate-300">
@@ -283,7 +327,15 @@ export default function About() {
           mentoring student&apos;s final project.
         </p>
 
-        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <Image
+          src="/images/arrow_down_4.svg"
+          alt="arrow down"
+          width={200}
+          height={200}
+          className="rounded-3xl my-20 self-center mx-auto"
+        />
+
+        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter3: A far-far away journey, Mainstream
         </h4>
         <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-stone-200 rounded-md px-6 py-4">
@@ -326,7 +378,15 @@ export default function About() {
           there.
         </p>
 
-        <h4 className="mt-60 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <Image
+          src="/images/arrow_down_2.svg"
+          alt="arrow down"
+          width={150}
+          height={150}
+          className="rounded-3xl my-20 self-center mx-auto"
+        />
+
+        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
           Chapter4: Alone in the dark
         </h4>
         <p className="mt-3 text-lg dark:text-slate-300">

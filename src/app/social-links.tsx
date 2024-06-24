@@ -5,7 +5,7 @@ import EmailWithCopy from "./_components/email-with-copy";
 export default function SocialLinks({ scrambled }: { scrambled: boolean }) {
   return (
     <div className="flex gap-2 md:gap-4 flex-wrap justify-center items-start">
-      <div className="animate-float-2">
+      <div className={scrambled ? "animate-float-2" : ""}>
         <a
           href="https://github.com/AsadSaleh"
           target="_blank"
@@ -16,7 +16,10 @@ export default function SocialLinks({ scrambled }: { scrambled: boolean }) {
           <p>GitHub</p>
         </a>
       </div>
-      <div className="animate-float-2" style={{ animationDelay: "0.5s" }}>
+      <div
+        className={scrambled ? "animate-float-2" : ""}
+        style={{ animationDelay: "0.5s" }}
+      >
         <a
           href="https://www.linkedin.com/in/as-ad-saleh-umar-876608a4/"
           target="_blank"
@@ -27,7 +30,10 @@ export default function SocialLinks({ scrambled }: { scrambled: boolean }) {
           <p>LinkedIn</p>
         </a>
       </div>
-      <div className="animate-float-2" style={{ animationDelay: "1s" }}>
+      <div
+        className={scrambled ? "animate-float-2" : ""}
+        style={{ animationDelay: "1s" }}
+      >
         <a
           href="https://stackoverflow.com/users/9844546/asad-s"
           target="_blank"
@@ -38,8 +44,11 @@ export default function SocialLinks({ scrambled }: { scrambled: boolean }) {
           <p>StackOverflow</p>
         </a>
       </div>
-      <EmailWithCopy scramble={scrambled} />
-      <div className="animate-float-2" style={{ animationDelay: "2s" }}>
+      <EmailWithCopy scrambled={scrambled} />
+      <div
+        className={scrambled ? "animate-float-2" : ""}
+        style={{ animationDelay: "2s" }}
+      >
         <a
           href="/documents/CV_Asad_Saleh_Umar.pdf"
           target="_blank"

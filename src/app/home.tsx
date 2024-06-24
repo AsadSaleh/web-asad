@@ -58,9 +58,9 @@ export default function Home() {
           <p className="text-xl md:text-3xl dark:text-white">
             A{" "}
             <span className="bg-gradient-to-r from-blue-600 to-red-700 font-semibold bg-clip-text text-transparent">
-              software engineer
+              Pro Max Ultra
             </span>{" "}
-            from Indonesia.
+            software engineer.
           </p>
           <div className="flex items-center justify-center md:justify-start gap-2">
             <p
