@@ -4,14 +4,14 @@ import EmailWithCopy from "./_components/email-with-copy";
 
 export default function SocialLinks({ scrambled }: { scrambled: boolean }) {
   return (
-    <div className="flex gap-2 md:gap-4 flex-wrap justify-center items-start">
+    <div className="flex flex-wrap items-start justify-center gap-2 md:gap-4">
       <div className={scrambled ? "animate-float-2" : ""}>
         <a
           href="https://github.com/AsadSaleh"
           target="_blank"
           rel="noopener noreferrer"
           data-scramble={scrambled}
-          className="h-min hover:scale-110 font-mono text-xs p-4 rounded-xl bg-slate-800 text-white flex items-center active:scale-95 transition-all duration-300 data-[scramble=true]:mt-10 data-[scramble=true]:-rotate-12"
+          className="flex h-min items-center rounded-xl bg-slate-800 p-4 font-mono text-xs text-white transition-all duration-300 hover:scale-110 active:scale-95 data-[scramble=true]:mt-10 data-[scramble=true]:-rotate-12"
         >
           <p>GitHub</p>
         </a>
@@ -25,7 +25,7 @@ export default function SocialLinks({ scrambled }: { scrambled: boolean }) {
           target="_blank"
           rel="noopener noreferrer"
           data-scramble={scrambled}
-          className="h-min hover:scale-110 font-mono text-xs p-4 rounded-xl bg-[#0077b5] text-white flex items-center active:scale-95 transition-all duration-300 data-[scramble=true]:mt-20 data-[scramble=true]:rotate-6"
+          className="flex h-min items-center rounded-xl bg-[#0077b5] p-4 font-mono text-xs text-white transition-all duration-300 hover:scale-110 active:scale-95 data-[scramble=true]:mt-20 data-[scramble=true]:rotate-6"
         >
           <p>LinkedIn</p>
         </a>
@@ -39,7 +39,7 @@ export default function SocialLinks({ scrambled }: { scrambled: boolean }) {
           target="_blank"
           rel="noopener noreferrer"
           data-scramble={scrambled}
-          className="h-min hover:scale-110 font-mono text-xs p-4 rounded-xl bg-[#F48024] text-white flex items-center active:scale-95 transition-all duration-300 data-[scramble=true]:mb-15  data-[scramble=true]:rotate-12"
+          className="data-[scramble=true]:mb-15 flex h-min items-center rounded-xl bg-[#F48024] p-4 font-mono text-xs text-white transition-all duration-300 hover:scale-110 active:scale-95 data-[scramble=true]:rotate-12"
         >
           <p>StackOverflow</p>
         </a>
@@ -54,7 +54,7 @@ export default function SocialLinks({ scrambled }: { scrambled: boolean }) {
           target="_blank"
           rel="noopener noreferrer"
           data-scramble={scrambled}
-          className="h-min hover:scale-110 font-mono text-xs p-4 rounded-xl bg-green-700 text-white flex items-center active:scale-95 gap-1 transition-all duration-300 data-[scramble=true]:-mt-10 data-[scramble=true]:-ml-10 data-[scramble=true]:-rotate-3"
+          className="flex h-min items-center gap-1 rounded-xl bg-green-700 p-4 font-mono text-xs text-white transition-all duration-300 hover:scale-110 active:scale-95 data-[scramble=true]:-ml-10 data-[scramble=true]:-mt-10 data-[scramble=true]:-rotate-3"
         >
           Latest CV
         </a>

@@ -9,7 +9,7 @@ import { useState } from "react";
 
 function useLocaleStorageState<T>(
   key: string,
-  defaultValue: T
+  defaultValue: T,
 ): [T, (value: T) => void] {
   const [state, setState] = useState(() => {
     if (typeof window !== "undefined") {
@@ -31,14 +31,14 @@ function useLocaleStorageState<T>(
 export default function Home() {
   const [scrambled, setScrambled] = useLocaleStorageState(
     "web:asad:scramble",
-    true
+    true,
   );
 
   return (
-    <main className="max-w-lg md:max-w-2xl mx-auto py-8 md:py-20">
+    <main className="mx-auto max-w-lg py-8 md:max-w-2xl md:py-20">
       <SocialLinks scrambled={scrambled} />
 
-      <section className="mt-20 flex flex-col md:flex-row gap-4 items-center justify-center">
+      <section className="mt-20 flex flex-col items-center justify-center gap-4 md:flex-row">
         <Image
           src="/images/profile_pixelized_square.jpeg"
           width={130}
@@ -47,7 +47,7 @@ export default function Home() {
           className="rounded-3xl"
         />
         <div className="text-center md:text-left">
-          <p className="text-sm md:text-xl text-stone-400 italic">
+          <p className="text-sm italic text-stone-400 md:text-xl">
             Hello there!
             <br />
           </p>
@@ -57,20 +57,20 @@ export default function Home() {
           </p>
           <p className="text-xl md:text-3xl dark:text-white">
             A{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-red-700 font-semibold bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-red-700 bg-clip-text font-semibold text-transparent">
               Pro Max Ultra
             </span>{" "}
             software engineer.
           </p>
-          <div className="flex items-center justify-center md:justify-start gap-2">
+          <div className="flex items-center justify-center gap-2 md:justify-start">
             <p
-              className="dark:text-stone-400 text-stone-500 data-[hide=true]:hidden"
+              className="text-stone-500 data-[hide=true]:hidden dark:text-stone-400"
               data-hide={!scrambled}
             >
               Please fix this site 😢
             </p>
             <button
-              className="text-slate-800 bg-slate-200 dark:text-white py-2 px-4 dark:bg-slate-800 rounded-lg active:scale-90 transition-all duration-300"
+              className="rounded-lg bg-slate-200 px-4 py-2 text-slate-800 transition-all duration-300 active:scale-90 dark:bg-slate-800 dark:text-white"
               onClick={() => setScrambled(!scrambled)}
             >
               {scrambled ? "Fix it! 🔨" : "Break it 🔥"}
@@ -79,22 +79,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 mt-20 gap-4 px-4 md:px-0">
+      <section className="mt-20 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:px-0">
         <Link
           href="/porto"
           data-scrambled={scrambled}
-          className="block animate-none data-[scrambled=true]:animate-float-2 data-[scrambled=true]:mt-40"
+          className="block animate-none data-[scrambled=true]:mt-40 data-[scrambled=true]:animate-float-2"
         >
           <div
             data-scrambled={scrambled}
-            className="block h-full rotate-0 data-[scrambled=true]:rotate-6 group rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 active:scale-95 transition-all"
+            className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 transition-all active:scale-95 data-[scrambled=true]:rotate-6"
           >
-            <div className="w-full h-full p-4 md:px-6 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-              <div className=" flex items-center justify-between gap-2 text-white dark:text-white">
+            <div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+              <div className="flex items-center justify-between gap-2 text-white dark:text-white">
                 <h4 className="text-xl md:text-2xl">Portfolio</h4>
-                <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
+                <ArrowRightIcon className="transition-all group-hover:translate-x-1 dark:text-white" />
               </div>
-              <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
+              <p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
                 Let&apos;s see As&apos;ad&apos;s playing cards
               </p>
             </div>
@@ -104,19 +104,19 @@ export default function Home() {
         <Link
           href="/about"
           data-scrambled={scrambled}
-          className="block animate-none data-[scrambled=true]:animate-float data-[scrambled=true]:mt-10"
+          className="block animate-none data-[scrambled=true]:mt-10 data-[scrambled=true]:animate-float"
           style={{ animationDelay: "0.75s" }}
         >
           <div
             data-scrambled={scrambled}
-            className="block h-full rotate-0 data-[scrambled=true]:-rotate-3 group rounded-lg bg-gradient-to-r from-red-700 to-orange-600 active:scale-95 transition"
+            className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 transition active:scale-95 data-[scrambled=true]:-rotate-3"
           >
-            <div className="w-full h-full p-4 md:px-6 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-              <div className="text-xl md:text-3xl flex items-center justify-between gap-2 text-white dark:text-white">
+            <div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+              <div className="flex items-center justify-between gap-2 text-xl text-white md:text-3xl dark:text-white">
                 <h4 className="text-xl md:text-2xl">About</h4>
-                <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
+                <ArrowRightIcon className="transition-all group-hover:translate-x-1 dark:text-white" />
               </div>
-              <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
+              <p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
                 Read story about my journey
               </p>
             </div>
@@ -128,19 +128,19 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
           data-scrambled={scrambled}
-          className="block animate-none data-[scrambled=true]:animate-float data-[scrambled=true]:mt-14"
+          className="block animate-none data-[scrambled=true]:mt-14 data-[scrambled=true]:animate-float"
           style={{ animationDelay: "1.5s" }}
         >
           <div
             data-scrambled={scrambled}
-            className="rotate-0 h-full data-[scrambled=true]:rotate-[160deg] group rounded-lg bg-gradient-to-r from-green-600 to-teal-800 active:scale-95 transition"
+            className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-green-600 to-teal-800 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[160deg]"
           >
-            <div className="w-full h-full p-4 md:px-6 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-              <div className="text-xl flex justify-between md:text-3xl gap-1 text-white dark:text-white">
+            <div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+              <div className="flex justify-between gap-1 text-xl text-white md:text-3xl dark:text-white">
                 <h4 className="text-xl md:text-2xl">Blogs</h4>
-                <ArrowUpRightIcon className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                <ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
               </div>
-              <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
+              <p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
                 Discover what&apos;s inside my head
               </p>
             </div>
@@ -157,14 +157,14 @@ export default function Home() {
         >
           <div
             data-scrambled={scrambled}
-            className="rotate-0 h-full data-[scrambled=true]:rotate-[45deg] group rounded-lg bg-gradient-to-r from-orange-600 to-yellow-500 active:scale-95 transition"
+            className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-orange-600 to-yellow-500 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[45deg]"
           >
-            <div className="w-full p-4 md:px-6 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-              <div className="text-xl flex justify-between md:text-3xl gap-1 text-white dark:text-white">
+            <div className="w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+              <div className="flex justify-between gap-1 text-xl text-white md:text-3xl dark:text-white">
                 <h4 className="text-xl md:text-2xl">Learn Coding</h4>
-                <ArrowUpRightIcon className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                <ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
               </div>
-              <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
+              <p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
                 Free coding course
               </p>
             </div>
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       <footer className="mt-20 px-2">
-        <p className="text-xs text-center text-stone-400 dark:text-stone-500">
+        <p className="text-center text-xs text-stone-400 dark:text-stone-500">
           © {new Date().getFullYear()} As&apos;ad Ghanim. All rights reserved.
         </p>
       </footer>

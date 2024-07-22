@@ -8,7 +8,7 @@ export default function PortoCard(props: {
   year?: string;
 }) {
   return (
-    <div className="p-4 md:p-6 flex flex-col justify-between gap-2 rounded-xl border border-stone-200 dark:border-stone-700 bg-white dark:bg-slate-900">
+    <div className="flex flex-col justify-between gap-2 rounded-xl border border-stone-200 bg-white p-4 md:p-6 dark:border-stone-700 dark:bg-slate-900">
       <div>
         {/* Image */}
         <div className="flex items-center justify-center">
@@ -20,15 +20,15 @@ export default function PortoCard(props: {
               height={200}
             />
           ) : (
-            <div className="flex h-[180px] w-full items-center text-sm justify-center bg-slate-200 dark:bg-slate-800 rounded-md">
-              <p className="font-light text-center text-slate-400">No Image</p>
+            <div className="flex h-[180px] w-full items-center justify-center rounded-md bg-slate-200 text-sm dark:bg-slate-800">
+              <p className="text-center font-light text-slate-400">No Image</p>
             </div>
           )}
         </div>
 
         {/* Title & Desc */}
         <div className="mt-2">
-          <p className="text-xl tracking-wide font-semibold dark:text-white">
+          <p className="text-xl font-semibold tracking-wide dark:text-white">
             {props.title}
           </p>
           <p className="text-md text-stone-500 dark:text-stone-400">
@@ -39,7 +39,7 @@ export default function PortoCard(props: {
 
       <div className="flex items-center justify-between">
         {/* Link */}
-        <div className="mt-2 flex justify-start items-start gap-2">
+        <div className="mt-2 flex items-start justify-start gap-2">
           {Object.entries(props.links).map(([type, url]) => {
             if (type === "github") {
               return (
@@ -48,7 +48,7 @@ export default function PortoCard(props: {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-xs py-2 px-3 rounded-xl transition active:scale-90 text-slate-800 bg-stone-200 hover:bg-stone-300 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
+                  className="rounded-xl bg-stone-200 px-3 py-2 font-mono text-xs text-slate-800 transition hover:bg-stone-300 active:scale-90 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
                 >
                   GitHub
                 </a>
@@ -60,7 +60,7 @@ export default function PortoCard(props: {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-mono text-xs py-2 px-3 rounded-xl transition active:scale-90 text-slate-800 bg-stone-200 hover:bg-stone-300 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
+                className="rounded-xl bg-stone-200 px-3 py-2 font-mono text-xs text-slate-800 transition hover:bg-stone-300 active:scale-90 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
               >
                 Open App
               </a>

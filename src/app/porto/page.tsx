@@ -14,14 +14,14 @@ export default function Porto() {
       <nav className="flex">
         <Link
           href="/"
-          className="my-4 px-4 py-2 transition flex items-center gap-2 rounded border-2 active:scale-95 bg-transparent border-stone-400 hover:bg-stone-200 dark:text-white dark:border-stone-200 dark:hover:bg-stone-100 dark:hover:text-black"
+          className="my-4 flex items-center gap-2 rounded border-2 border-stone-400 bg-transparent px-4 py-2 transition hover:bg-stone-200 active:scale-95 dark:border-stone-200 dark:text-white dark:hover:bg-stone-100 dark:hover:text-black"
         >
           <ArrowLeftIcon />
           To Home
         </Link>
       </nav>
 
-      <section className="max-w-3xl mx-auto">
+      <section className="mx-auto max-w-3xl">
         <h1 className="text-3xl dark:text-white">Portfolio</h1>
         <h2 className="text-xl text-slate-700 dark:text-slate-500">
           My work & hobby projects are listed here
@@ -37,7 +37,7 @@ export default function Porto() {
           <span className="italic">from scratch</span>, baru{" "}
           <span className="italic">later</span> dikerjakan bersama tim.
         </h4>
-        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
           <PortoCard
             title="Pager web app"
             desc="Aplikasi web SaaS untuk mengelola notifikasi aplikasi web3"
@@ -114,7 +114,7 @@ export default function Porto() {
           susah. Atau <span className="font-semibold">TimeToSync</span>, untuk
           tau dengan cepet waktu temen kantor ketika kerja remote.
         </h4>
-        <div className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-4 ">
+        <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-2">
           <PortoCard
             title="Tangga Belajar"
             desc="Next-Gen Indonesia's Coding Learning Platform"

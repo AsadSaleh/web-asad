@@ -11,7 +11,8 @@ body {
   --paper-color: #ffffff;
 
   background-color: var(--paper-color);
-  background-size: var(--grid-dash) var(--grid-dash),
+  background-size:
+    var(--grid-dash) var(--grid-dash),
     var(--grid-size) var(--grid-size);
   background-image: linear-gradient(
       to bottom,

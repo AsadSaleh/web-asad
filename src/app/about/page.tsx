@@ -14,14 +14,14 @@ export default function About() {
       <nav className="flex">
         <Link
           href="/"
-          className="my-4 px-4 py-2 transition flex items-center gap-2 rounded border-2 active:scale-95 bg-transparent border-stone-400 hover:bg-stone-200 dark:text-white dark:border-stone-200 dark:hover:bg-stone-100 dark:hover:text-black"
+          className="my-4 flex items-center gap-2 rounded border-2 border-stone-400 bg-transparent px-4 py-2 transition hover:bg-stone-200 active:scale-95 dark:border-stone-200 dark:text-white dark:hover:bg-stone-100 dark:hover:text-black"
         >
           <ArrowLeftIcon />
           To Home
         </Link>
       </nav>
 
-      <section className="max-w-3xl mx-auto">
+      <section className="mx-auto max-w-3xl">
         <h1 className="text-3xl dark:text-white">About me</h1>
         <h4 className="mb-4 text-xl text-slate-700 dark:text-slate-500">
           A not so organized story about me
@@ -30,7 +30,7 @@ export default function About() {
         <div className="mt-10 text-3xl dark:text-white">
           <p>
             <span>Nama saya&nbsp;</span>
-            <span className="text-orange-600 font-semibold">
+            <span className="font-semibold text-orange-600">
               As&apos;ad Saleh Umar Ghanim
             </span>
           </p>
@@ -49,11 +49,11 @@ export default function About() {
         </p>
 
         {/* Tech Stack */}
-        <div className="mt-8 bg-stone-200 dark:bg-stone-800 dark:text-slate-300 p-4 rounded">
-          <h4 className="md:text-3xl font-semibold tracking-wider dark:text-white text-left">
+        <div className="mt-8 rounded bg-stone-200 p-4 dark:bg-stone-800 dark:text-slate-300">
+          <h4 className="text-left font-semibold tracking-wider md:text-3xl dark:text-white">
             Teknologi yang dikuasai
           </h4>
-          <div className="mt-2 flex gap-x-4 gap-y-2 flex-wrap items-center justify-start text-slate-600 dark:text-slate-300">
+          <div className="mt-2 flex flex-wrap items-center justify-start gap-x-4 gap-y-2 text-slate-600 dark:text-slate-300">
             <p>Git</p>
             <p>HTML</p>
             <p>CSS</p>
@@ -78,10 +78,10 @@ export default function About() {
             <p>Go</p>
           </div>
 
-          <h5 className="mt-4 md:text-2xl font-semibold tracking-wider">
+          <h5 className="mt-4 font-semibold tracking-wider md:text-2xl">
             Alat lainnya
           </h5>
-          <div className="mt-2 flex gap-x-4 gap-y-2 flex-wrap items-center justify-start text-slate-600 dark:text-slate-300">
+          <div className="mt-2 flex flex-wrap items-center justify-start gap-x-4 gap-y-2 text-slate-600 dark:text-slate-300">
             <p>PM2</p>
             <p>Linux VPS</p>
             <p>Vercel</p>
@@ -99,10 +99,10 @@ export default function About() {
           alt="arrow down"
           width={60}
           height={60}
-          className="rounded-3xl my-20 self-center mx-auto"
+          className="mx-auto my-20 self-center rounded-3xl"
         />
 
-        <h4 className="mt-20  text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-20 text-center font-mono font-semibold underline underline-offset-2 md:text-left md:text-3xl md:no-underline dark:text-slate-300">
           Chapter0: Titik Balik Perjuangan 🇮🇩
         </h4>
         <p className="mt-3 text-lg tracking-wider dark:text-slate-300">
@@ -152,13 +152,13 @@ export default function About() {
           alt="arrow down"
           width={100}
           height={100}
-          className="rounded-3xl my-20 self-center mx-auto"
+          className="mx-auto my-20 self-center rounded-3xl"
         />
 
-        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-20 text-center font-mono font-semibold underline underline-offset-2 md:text-left md:text-3xl md:no-underline dark:text-slate-300">
           Chapter1: A late bachelor degree, RubyH
         </h4>
-        <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-stone-200 rounded-md px-6 py-4">
+        <div className="mt-4 rounded-md bg-stone-200 px-6 py-4 dark:bg-stone-800 dark:text-stone-200">
           Jakarta, Indonesia. Full time. RubyH is an Indonesian software house
           that helps startups/companies outsource their tech needs. We work with
           clients including PwC, Midtrans, Akseleran, Transfez, etc. Tech stack
@@ -194,20 +194,20 @@ export default function About() {
           alt="arrow down"
           width={60}
           height={60}
-          className="rounded-3xl my-20 self-center mx-auto"
+          className="mx-auto my-20 self-center rounded-3xl"
         />
 
-        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-20 text-center font-mono font-semibold underline underline-offset-2 md:text-left md:text-3xl md:no-underline dark:text-slate-300">
           Chapter2: A place called home, IDN
         </h4>
-        <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-stone-200 rounded-md px-6 py-4">
+        <div className="mt-4 rounded-md bg-stone-200 px-6 py-4 dark:bg-stone-800 dark:text-stone-200">
           Jakarta, Indonesia. Full time. Infradigital is a B2B Edtech Startup
           providing financial, compliance & supply chain services to over 20,000
           low-income schools. I was a part of the engineering team, tasked with
           developing & maintaining the apps & services. Tech stack including:
           Flutter, React, NextJS, Go, NodeJS, Android (Java), and Redis.
-          <p className="font-bold mt-4">Key achievements:</p>
-          <ol className="list-decimal list-inside">
+          <p className="mt-4 font-bold">Key achievements:</p>
+          <ol className="list-inside list-decimal">
             <li>
               I maintain an existing Android and NodeJS app for student payment.
               We successfully decreased the number of crashes significantly.
@@ -289,10 +289,10 @@ export default function About() {
           alt="arrow down"
           width={60}
           height={60}
-          className="rounded-3xl my-20 self-center mx-auto"
+          className="mx-auto my-20 self-center rounded-3xl"
         />
 
-        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-20 text-center font-mono font-semibold underline underline-offset-2 md:text-left md:text-3xl md:no-underline dark:text-slate-300">
           Chapter2.2: Introduction to teaching
         </h4>
         <p className="mt-3 text-lg dark:text-slate-300">
@@ -311,10 +311,10 @@ export default function About() {
           alt="arrow down"
           width={100}
           height={100}
-          className="rounded-3xl my-20 self-center mx-auto"
+          className="mx-auto my-20 self-center rounded-3xl"
         />
 
-        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-20 text-center font-mono font-semibold underline underline-offset-2 md:text-left md:text-3xl md:no-underline dark:text-slate-300">
           Chapter2.7: More teaching
         </h4>
         <p className="mt-3 text-lg dark:text-slate-300">
@@ -332,13 +332,13 @@ export default function About() {
           alt="arrow down"
           width={200}
           height={200}
-          className="rounded-3xl my-20 self-center mx-auto"
+          className="mx-auto my-20 self-center rounded-3xl"
         />
 
-        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-20 text-center font-mono font-semibold underline underline-offset-2 md:text-left md:text-3xl md:no-underline dark:text-slate-300">
           Chapter3: A far-far away journey, Mainstream
         </h4>
-        <div className="mt-4 bg-stone-200 dark:bg-stone-800 dark:text-stone-200 rounded-md px-6 py-4">
+        <div className="mt-4 rounded-md bg-stone-200 px-6 py-4 dark:bg-stone-800 dark:text-stone-200">
           US, Remote. MainstreamLabs is a startup with a vision to provide a
           governance platform for web3 organizations. Tech stack includes:
           NextJS 14 (RSC), Stripe API, NodeJS, Supabase. As a Full-Stack
@@ -383,10 +383,10 @@ export default function About() {
           alt="arrow down"
           width={150}
           height={150}
-          className="rounded-3xl my-20 self-center mx-auto"
+          className="mx-auto my-20 self-center rounded-3xl"
         />
 
-        <h4 className="mt-20 text-center md:text-left md:text-3xl font-semibold dark:text-slate-300 font-mono underline underline-offset-2 md:no-underline">
+        <h4 className="mt-20 text-center font-mono font-semibold underline underline-offset-2 md:text-left md:text-3xl md:no-underline dark:text-slate-300">
           Chapter4: Alone in the dark
         </h4>
         <p className="mt-3 text-lg dark:text-slate-300">
@@ -420,7 +420,7 @@ export default function About() {
           Go check it out! And make sure to tell people about it 😊
         </p>
 
-        <h4 className="mt-60 text-3xl dark:text-slate-300 font-mono">
+        <h4 className="mt-60 font-mono text-3xl dark:text-slate-300">
           The story continues...
         </h4>
       </section>

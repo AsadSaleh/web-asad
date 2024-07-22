@@ -37,14 +37,14 @@ export default function EmailWithCopy({
       <button
         onClick={copyEmailToClipboard}
         data-scramble={scrambled}
-        className="h-min hover:scale-110 font-mono text-xs p-4 rounded-xl bg-red-700 text-white flex items-center active:scale-95 gap-2 transition-all duration-300 data-[scramble=true]:mt-10 data-[scramble=true]:rotate-[-20deg]"
+        className="flex h-min items-center gap-2 rounded-xl bg-red-700 p-4 font-mono text-xs text-white transition-all duration-300 hover:scale-110 active:scale-95 data-[scramble=true]:mt-10 data-[scramble=true]:rotate-[-20deg]"
         type="button"
       >
         Email
         {coppied ? (
-          <CheckIcon className="w-4 h-4 text-white font-bold" />
+          <CheckIcon className="h-4 w-4 font-bold text-white" />
         ) : (
-          <DocumentDuplicateIcon className="w-4 h-4" />
+          <DocumentDuplicateIcon className="h-4 w-4" />
         )}
       </button>
     </div>
