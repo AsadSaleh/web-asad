@@ -38,7 +38,7 @@ export default function Home() {
     <main className="max-w-lg md:max-w-2xl mx-auto py-8 md:py-20">
       <SocialLinks scrambled={scrambled} />
 
-      <div className="mt-20 flex flex-col md:flex-row gap-4 items-center justify-center">
+      <section className="mt-20 flex flex-col md:flex-row gap-4 items-center justify-center">
         <Image
           src="/images/profile_pixelized_square.jpeg"
           width={130}
@@ -77,107 +77,99 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section className="grid grid-cols-2 mt-20 gap-4 px-8 lg:px-0 items-stretch">
-        <div
+      <section className="grid grid-cols-1 sm:grid-cols-2 mt-20 gap-4 px-4 md:px-0">
+        <Link
+          href="/porto"
           data-scrambled={scrambled}
-          className=" animate-none data-[scrambled=true]:animate-float-2 data-[scrambled=true]:mt-40"
+          className="block animate-none data-[scrambled=true]:animate-float-2 data-[scrambled=true]:mt-40"
         >
-          <Link href="/porto">
-            <div
-              data-scrambled={scrambled}
-              className="rotate-0 data-[scrambled=true]:rotate-6 group p-1 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 active:scale-95 transition-all"
-            >
-              <div className="w-full p-4 md:px-8 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-                <h2 className="text-xl md:text-3xl flex items-center gap-2 text-white dark:text-white">
-                  <span>Portfolio</span>
-                  <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
-                </h2>
-                <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
-                  Let&apos;s see As&apos;ad&apos;s playing cards
-                </p>
+          <div
+            data-scrambled={scrambled}
+            className="block h-full rotate-0 data-[scrambled=true]:rotate-6 group rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 active:scale-95 transition-all"
+          >
+            <div className="w-full h-full p-4 md:px-6 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
+              <div className=" flex items-center justify-between gap-2 text-white dark:text-white">
+                <h4 className="text-xl md:text-2xl">Portfolio</h4>
+                <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
               </div>
+              <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
+                Let&apos;s see As&apos;ad&apos;s playing cards
+              </p>
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div
+        <Link
+          href="/about"
           data-scrambled={scrambled}
-          className=" animate-none data-[scrambled=true]:animate-float data-[scrambled=true]:mt-10"
+          className="block animate-none data-[scrambled=true]:animate-float data-[scrambled=true]:mt-10"
           style={{ animationDelay: "0.75s" }}
         >
-          <Link href="/about">
-            <div
-              data-scrambled={scrambled}
-              className="rotate-0 data-[scrambled=true]:-rotate-3 group p-1 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 active:scale-95 transition"
-            >
-              <div className="w-full h-full p-4 md:px-8 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-                <h2 className="text-xl md:text-3xl flex items-center gap-2 text-white dark:text-white">
-                  <span>About</span>
-                  <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
-                </h2>
-                <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
-                  Read story about my journey
-                </p>
+          <div
+            data-scrambled={scrambled}
+            className="block h-full rotate-0 data-[scrambled=true]:-rotate-3 group rounded-lg bg-gradient-to-r from-red-700 to-orange-600 active:scale-95 transition"
+          >
+            <div className="w-full h-full p-4 md:px-6 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
+              <div className="text-xl md:text-3xl flex items-center justify-between gap-2 text-white dark:text-white">
+                <h4 className="text-xl md:text-2xl">About</h4>
+                <ArrowRightIcon className="group-hover:translate-x-1 transition-all dark:text-white" />
               </div>
+              <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
+                Read story about my journey
+              </p>
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        <div
+        <a
+          href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
+          target="_blank"
+          rel="noopener noreferrer"
           data-scrambled={scrambled}
-          className=" animate-none data-[scrambled=true]:animate-float data-[scrambled=true]:mt-14"
+          className="block animate-none data-[scrambled=true]:animate-float data-[scrambled=true]:mt-14"
           style={{ animationDelay: "1.5s" }}
         >
-          <a
-            href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            data-scrambled={scrambled}
+            className="rotate-0 h-full data-[scrambled=true]:rotate-[160deg] group rounded-lg bg-gradient-to-r from-green-600 to-teal-800 active:scale-95 transition"
           >
-            <div
-              data-scrambled={scrambled}
-              className="rotate-0 data-[scrambled=true]:rotate-[160deg] group p-1 rounded-lg bg-gradient-to-r from-green-600 to-teal-800 active:scale-95 transition"
-            >
-              <div className="w-full h-full p-4 md:px-8 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-                <h2 className="text-xl md:text-3xl flex gap-1 text-white dark:text-white">
-                  <span>Blogs</span>
-                  <ArrowUpRightIcon className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                </h2>
-                <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
-                  Discover what&apos;s inside my head
-                </p>
+            <div className="w-full h-full p-4 md:px-6 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
+              <div className="text-xl flex justify-between md:text-3xl gap-1 text-white dark:text-white">
+                <h4 className="text-xl md:text-2xl">Blogs</h4>
+                <ArrowUpRightIcon className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
               </div>
+              <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
+                Discover what&apos;s inside my head
+              </p>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
 
-        <div
+        <a
           data-scrambled={scrambled}
-          className=" animate-none data-[scrambled=true]:animate-float"
+          href="https://www.tanggabelajar.id/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block animate-none data-[scrambled=true]:animate-float"
           style={{ animationDelay: "2.2s" }}
         >
-          <a
-            href="https://www.tanggabelajar.id/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            data-scrambled={scrambled}
+            className="rotate-0 h-full data-[scrambled=true]:rotate-[45deg] group rounded-lg bg-gradient-to-r from-orange-600 to-yellow-500 active:scale-95 transition"
           >
-            <div
-              data-scrambled={scrambled}
-              className="rotate-0 data-[scrambled=true]:rotate-[45deg] group p-1 rounded-lg bg-gradient-to-r from-orange-600 to-yellow-500 active:scale-95 transition"
-            >
-              <div className="w-full h-full p-4 md:px-8 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
-                <h2 className="text-xl md:text-3xl flex gap-1 text-white dark:text-white">
-                  <span>Learn to Code</span>
-                  <ArrowUpRightIcon className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                </h2>
-                <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
-                  Free coding course
-                </p>
+            <div className="w-full p-4 md:px-6 md:py-4 dark:bg-black rounded-lg group-hover:bg-transparent transition-all">
+              <div className="text-xl flex justify-between md:text-3xl gap-1 text-white dark:text-white">
+                <h4 className="text-xl md:text-2xl">Learn Coding</h4>
+                <ArrowUpRightIcon className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
               </div>
+              <p className="text-sm md:text-base text-slate-200 dark:text-slate-300">
+                Free coding course
+              </p>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </section>
 
       <footer className="mt-20 px-2">
