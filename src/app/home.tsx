@@ -87,7 +87,7 @@ export default function Home() {
         >
           <div
             data-scrambled={scrambled}
-            className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 transition-all active:scale-95 data-[scrambled=true]:rotate-6"
+            className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 p-1 transition-all active:scale-95 data-[scrambled=true]:rotate-6"
           >
             <div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
               <div className="flex items-center justify-between gap-2 text-white dark:text-white">
@@ -109,10 +109,10 @@ export default function Home() {
         >
           <div
             data-scrambled={scrambled}
-            className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 transition active:scale-95 data-[scrambled=true]:-rotate-3"
+            className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-3"
           >
             <div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
-              <div className="flex items-center justify-between gap-2 text-xl text-white md:text-3xl dark:text-white">
+              <div className="flex items-center justify-between gap-2 text-white dark:text-white">
                 <h4 className="text-xl md:text-2xl">About</h4>
                 <ArrowRightIcon className="transition-all group-hover:translate-x-1 dark:text-white" />
               </div>
@@ -122,6 +122,30 @@ export default function Home() {
             </div>
           </div>
         </Link>
+
+        <a
+          data-scrambled={scrambled}
+          href="https://www.tanggabelajar.id/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block animate-none data-[scrambled=true]:animate-float"
+          style={{ animationDelay: "2.2s" }}
+        >
+          <div
+            data-scrambled={scrambled}
+            className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-orange-600 to-yellow-500 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[45deg]"
+          >
+            <div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+              <div className="flex items-center justify-between gap-2 text-white dark:text-white">
+                <h4 className="text-xl md:text-2xl">Learn Coding</h4>
+                <ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
+              </div>
+              <p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
+                Free coding course
+              </p>
+            </div>
+          </div>
+        </a>
 
         <a
           href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
@@ -136,7 +160,7 @@ export default function Home() {
             className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-green-600 to-teal-800 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[160deg]"
           >
             <div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
-              <div className="flex justify-between gap-1 text-xl text-white md:text-3xl dark:text-white">
+              <div className="flex items-center justify-between gap-2 text-white dark:text-white">
                 <h4 className="text-xl md:text-2xl">Blogs</h4>
                 <ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
               </div>
@@ -146,33 +170,9 @@ export default function Home() {
             </div>
           </div>
         </a>
-
-        <a
-          data-scrambled={scrambled}
-          href="https://www.tanggabelajar.id/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block animate-none data-[scrambled=true]:animate-float"
-          style={{ animationDelay: "2.2s" }}
-        >
-          <div
-            data-scrambled={scrambled}
-            className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-orange-600 to-yellow-500 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[45deg]"
-          >
-            <div className="w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
-              <div className="flex justify-between gap-1 text-xl text-white md:text-3xl dark:text-white">
-                <h4 className="text-xl md:text-2xl">Learn Coding</h4>
-                <ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
-              </div>
-              <p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
-                Free coding course
-              </p>
-            </div>
-          </div>
-        </a>
       </section>
 
-      <footer className="mt-20 px-2">
+      <footer className="mt-32 px-2">
         <p className="text-center text-xs text-stone-400 dark:text-stone-500">
           © {new Date().getFullYear()} As&apos;ad Ghanim. All rights reserved.
         </p>
