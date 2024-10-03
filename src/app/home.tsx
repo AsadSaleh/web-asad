@@ -44,7 +44,8 @@ export default function Home() {
           width={130}
           height={130}
           alt="Pixelized Picture of As'ad"
-          className="rounded-3xl"
+          className="rounded-3xl transition data-[scrambled=true]:blur-md"
+          data-scrambled={scrambled}
         />
         <div className="text-center md:text-left">
           <p className="text-sm italic text-stone-400 md:text-xl">
