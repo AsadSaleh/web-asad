@@ -180,7 +180,7 @@ export default function Home() {
       </footer>
 
       <img
-        src="https://asadtest.goatcounter.com/count?p=email-open&sequenceId=${sequenceId}&sequenceBatchId=${sequenceBatchId}"
+        src="https://asadtest.goatcounter.com/count?p=email-open&param=testA&anotherparam=testB"
         alt=""
         style={{ display: "none" }}
         width="1"
