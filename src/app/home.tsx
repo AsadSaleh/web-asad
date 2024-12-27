@@ -178,14 +178,6 @@ export default function Home() {
           © {new Date().getFullYear()} As&apos;ad Ghanim. All rights reserved.
         </p>
       </footer>
-
-      <img
-        src="https://asadtest.goatcounter.com/count?p=email-open&param=testA&anotherparam=testB"
-        alt=""
-        style={{ display: "none" }}
-        width="1"
-        height="1"
-      />
     </main>
   );
 }
