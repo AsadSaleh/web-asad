@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export default function PortoCard(props: {
   imageUrl?: string;
-  desc: string;
+  desc?: string;
+  subtitle: string;
   title: string;
   links: { app?: string; github?: string };
   year?: string;
@@ -28,10 +29,13 @@ export default function PortoCard(props: {
 
         {/* Title & Desc */}
         <div className="mt-2">
-          <p className="text-xl font-semibold tracking-wide dark:text-white">
+          <p className="text-xl font-semibold tracking-wide dark:text-stone-100">
             {props.title}
           </p>
-          <p className="text-md text-stone-500 dark:text-stone-400">
+          <p className="mt-1 text-base leading-tight text-stone-500 dark:text-stone-400">
+            {props.subtitle}
+          </p>
+          <p className="mt-2 text-sm font-light text-stone-500 dark:text-stone-500">
             {props.desc}
           </p>
         </div>

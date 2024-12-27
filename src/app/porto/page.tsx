@@ -39,9 +39,18 @@ export default function Porto() {
         </h4>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
           <PortoCard
+            title="PALMS"
+            subtitle="Pascal Montessori Academic & Learning Management System"
+            desc="Aplikasi ini lumayan kompleks dan kaya fitur. Mulai dari connect ke API Backend, API Open AI, dan API S3. Terus dari sisi FE nya ada input file drag&drop, sorting table drag&drop, light & dark mode, dan editable table kayak excel."
+            imageUrl="/images/palms.png"
+            links={{}}
+            year="2024"
+          />
+          <PortoCard
             title="Pager web app"
-            desc="Aplikasi web SaaS untuk mengelola notifikasi aplikasi web3"
+            subtitle="Aplikasi web SaaS untuk mengelola notifikasi aplikasi web3"
             imageUrl="/images/pager.png"
+            desc="Cukup simpel, cuma Next.js, Supabase dan Stripe"
             links={{
               app: "https://app.getpager.xyz/onboarding",
             }}
@@ -49,7 +58,8 @@ export default function Porto() {
           />
           <PortoCard
             title="Pelajar mobile app"
-            desc="Aplikasi mobile untuk wali murid mengelola seluruh keperluan digital siswa"
+            subtitle="Aplikasi mobile untuk wali murid mengelola seluruh keperluan digital siswa"
+            desc="Ini seru sih, ngerjain ini hampir 1,5 tahun. Dari gak ngerti Flutter sampe bisa bikin app yang di download ratusan ribu kali. Ada offline supportnya pula, keren kan?"
             imageUrl="/images/pelajar.png"
             links={{
               app: "https://play.google.com/store/apps/details?id=io.infradigital.app.pelajar&hl=en_US",
@@ -58,7 +68,8 @@ export default function Porto() {
           />
           <PortoCard
             title="Portal Digital web app"
-            desc="Aplikasi web untuk staf sekolah mengelola seluruh keperluan digital sekolahnya"
+            subtitle="Aplikasi web untuk staf sekolah mengelola seluruh keperluan digital sekolahnya"
+            desc="Ini juga seru. Pake Next.js, Axios, dan Go lang (backend). Web app untuk input data sekolah, guru, murid, dll."
             imageUrl="/images/pordi.png"
             links={{
               app: "https://pordi.infradigital.io/",
@@ -67,27 +78,31 @@ export default function Porto() {
           />
           <PortoCard
             title="Yayasan IDF site"
-            desc="Website untuk mengenalkan Yayasan IDF kepada masyarakat"
+            subtitle="Website untuk mengenalkan Yayasan IDF kepada masyarakat"
+            desc="Hanya sebuah website statis."
             imageUrl="/images/idf.png"
             links={{ app: "https://infradigitalfoundation.netlify.app/" }}
             year="2020"
           />
           <PortoCard
             title="PT Iyada company profile site"
-            desc="Website untuk mengenalkan PT Iyada kepada masyarakat"
+            subtitle="Website untuk mengenalkan PT Iyada kepada masyarakat"
+            desc="Hanya sebuah website statis."
             imageUrl="/images/iyada.png"
             links={{ app: "https://iyada.id/" }}
             year="2020"
           />
           <PortoCard
             title="Moodah mobile app"
-            desc="Aplikasi Android & iOS untuk mengelola ERP perusahaan yang terhubung ke sistem Moodah (Service Discontinued)"
+            subtitle="Aplikasi Android & iOS untuk mengelola ERP perusahaan yang terhubung ke sistem Moodah (Service Discontinued)"
+            desc="Mobile app ERP yang lumayan kompleks, selain manage data ada scanner nya loh. Dibuat dengan React Native dan dirilis menjadi app Android dan iOS."
             links={{}}
             year="2019"
           />
           <PortoCard
             title="Transfez mobile app"
-            desc="Aplikasi Android & iOS untuk mengirim uang ke luar negeri (Sudah direvamp dari iterasi awal)"
+            subtitle="Aplikasi Android & iOS untuk mengirim uang ke luar negeri (Sudah direvamp dari iterasi awal)"
+            desc="Mobile app ini seru, karena aku jadi belajar banyak tentang payment service. Aku jadi pengalaman bikin step-by-step verifikasi muka dan KTP loh. Juga bikin kalkulator currency. Keren deh! Dibuat dengan React Native."
             links={{
               app: "https://play.google.com/store/apps/details?id=com.indokoala.transfez&hl=id&gl=US",
             }}
@@ -95,7 +110,8 @@ export default function Porto() {
           />
           <PortoCard
             title="Lumbung Dana web app"
-            desc="Aplikasi web untuk mengelola dana pinjaman peer-to-peer"
+            subtitle="Aplikasi web untuk mengelola dana pinjaman peer-to-peer"
+            desc="Web app pertama. Belajar React.js, Redux, Redux-Form, Axios. Dari sini aku memulai segalanya. Jadi nostalgia banget."
             imageUrl="/images/lumbung_dana.png"
             links={{
               app: "https://lumbungdana.co.id/",
@@ -117,14 +133,16 @@ export default function Porto() {
         <div className="mt-2 grid grid-cols-1 gap-4 md:grid-cols-2">
           <PortoCard
             title="Tangga Belajar"
-            desc="Next-Gen Indonesia's Coding Learning Platform"
+            subtitle="Next-Gen Indonesia's Coding Learning Platform"
+            desc="Ini web app super keren. Udah bikin *almost sendiri dari awal. Dari design, coding, sampe deploy, ngurus docker, VPS, bikin kurikulumnya juga lagi. Gak sampe kurikulum doang, bikin gambarnya juga buat soal-soal yang rada kompleks. Terus bikin pamflet marketing. wkwkw. Aku juga bikin fitur 'Code Playground' buat belajar langsung di web app ini. Mobile responsive pula. Pake Next.js app directory dan Server Action. Pake Drizzle ORM. Pake Postgres di Neon (free wkwk). Dibantuin influencer Indo ternama. Terus campaign ke sekolah-sekolah biar pake. wkwk. Gils, seru!"
             imageUrl="/images/tangga_belajar.png"
             links={{ app: "https://tanggabelajar.id/" }}
             year="2024"
           />
           <PortoCard
             title="Personal site"
-            desc="My personal website built with Next.js and TailwindCSS"
+            subtitle="My personal website built with Next.js and TailwindCSS"
+            desc="Banyak bercerita, banyak teman."
             links={{
               github: "https://github.com/AsadSaleh/web-asad",
             }}
@@ -132,28 +150,20 @@ export default function Porto() {
             year="2023"
           />
           <PortoCard
-            title="Global Time Detector"
-            desc="A simple app to detect a random time and convert it to your timezone"
-            imageUrl="/images/global-time-detector.png"
-            links={{
-              app: "https://globaltimedetector.vercel.app/",
-              github: "https://github.com/AsadSaleh/detect-time",
-            }}
-            year="2023"
-          />
-          <PortoCard
             title="TimeToSync"
-            desc="A beatiful clock app for team sync across the globe"
+            subtitle="A beatiful clock app for team sync across the globe"
+            desc="Jadi awalnya bikin ini karena iseng. Bikin jam yang bisa sync dengan teman kantor yang notabene remote worker. Ternyata ada beberapa orang yang suka, akhirnya aku rapihin deh. Plus ada tambahan fitur 'Time Detector' buat ngecek waktu ke timezone kita."
             imageUrl="/images/timetosync.png"
             links={{
               app: "https://timetosync.netlify.app/",
               github: "https://github.com/AsadSaleh/time-ui",
             }}
-            year="2022"
+            year="2022 & 2023"
           />
           <PortoCard
             title="Pajakin"
-            desc="Free tax calculator for Indonesian worker (Pph 21)"
+            subtitle="Free tax calculator for Indonesian worker (Pph 21)"
+            desc="Ini juga karena iseng. Kayaknya ngitung pajak Pph tuh perasaan susah banget yaa. Ternyata gak susah-susah amat kok. Dan enaknya pake Pajakin (tidak seperti excel) bisa dibuka dari mana aja (HP, Laptop, dll)."
             imageUrl="/images/pajakin.png"
             links={{
               app: "https://pajakin.vercel.app/",
@@ -163,7 +173,8 @@ export default function Porto() {
           />
           <PortoCard
             title="Is it Retina?"
-            desc="Apakah layar kamu 'Retina Display'?"
+            subtitle="Apakah layar kamu 'Retina Display'?"
+            desc="Cuma kalkulasi sederhana. Nothing too fancy."
             imageUrl="/images/isitretina.png"
             links={{
               app: "https://is-it-retina.vercel.app/",
@@ -173,7 +184,8 @@ export default function Porto() {
           />
           <PortoCard
             title="Flip mobile app (ui only)"
-            desc="A sample React Native app which follows Flip's delightful UI"
+            subtitle="A sample React Native app which follows Flip's delightful UI"
+            desc="Waktu interview di Flip nyoba bikin UI nya. Seru juga sih, karena aku suka UI nya Flip ❤️"
             imageUrl=""
             links={{
               github: "https://github.com/AsadSaleh/flip_react_native_app",
@@ -182,7 +194,8 @@ export default function Porto() {
           />
           <PortoCard
             title="Drop Em"
-            desc="Component example for creating Drag & Drop file in React"
+            subtitle="Component example for creating Drag & Drop file in React"
+            desc="Ini apa ya? Aku sendiri sampe lupa. Ooh, kayaknya ini nyoba bikin alternatif dari Dropzone. Tapi gak jadi. wkwk"
             links={{ github: "https://github.com/AsadSaleh/drop-em" }}
             imageUrl=""
             year="2021"
