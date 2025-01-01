@@ -1,6 +1,6 @@
 "use client";
 
-import EmailWithCopy from "./_components/email-with-copy";
+import EmailWithCopy from "./email-with-copy";
 
 export default function SocialLinks({ scrambled }: { scrambled: boolean }) {
   return (
