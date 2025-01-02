@@ -18,7 +18,7 @@ export default function HomeUI({
 
   // Set cookie to store scramble status
   useEffect(() => {
-    document.cookie = `web:asad:scramble=${scrambleStatus}`;
+    document.cookie = `web:asad:scramble=${scrambleStatus}; path=/; max-age=31536000`;
   }, [scrambleStatus]);
 
   const scrambled =
