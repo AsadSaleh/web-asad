@@ -29,8 +29,8 @@ export default function Porto() {
 
         <h3 className="mt-10 text-xl dark:text-white">Proud Projects</h3>
         <h4 className="text-slate-700 dark:text-slate-400">
-          This is the latest project that I worked on and I'm really proud of
-          it.
+          This is the latest project that I worked on and I&apos;m really proud
+          of it.
         </h4>
         <div className="mt-4 grid grid-cols-1 gap-4">
           <PortoCard
