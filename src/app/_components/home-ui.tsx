@@ -144,10 +144,8 @@ export default function HomeUI({
           </div>
         </a>
 
-        <a
-          href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/blog"
           data-scrambled={scrambled}
           className="block animate-none data-[scrambled=true]:mt-14 data-[scrambled=true]:animate-float"
           style={{ animationDelay: "1.5s" }}
@@ -166,7 +164,7 @@ export default function HomeUI({
               </p>
             </div>
           </div>
-        </a>
+        </Link>
       </section>
 
       <footer className="mt-32 px-2">

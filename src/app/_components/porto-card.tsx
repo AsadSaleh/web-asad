@@ -5,6 +5,7 @@ export default function PortoCard(props: {
   desc?: string;
   subtitle: string;
   title: string;
+  technologies?: string[];
   links: { app?: string; github?: string };
   year?: string;
 }) {
@@ -35,8 +36,19 @@ export default function PortoCard(props: {
           <p className="mt-1 text-base leading-tight text-stone-500 dark:text-stone-400">
             {props.subtitle}
           </p>
-          <p className="mt-2 text-sm font-light text-stone-500 dark:text-stone-500">
-            {props.desc}
+          <div className="mt-2 space-y-2 text-sm font-light text-stone-500 dark:text-stone-500">
+            {props.desc
+              ?.replace(/\\n/g, "\n")
+              .split(/\n{2,}/)
+              .map((para, i) => (
+                <p key={i} className="whitespace-pre-line">
+                  {para}
+                </p>
+              ))}
+          </div>
+
+          <p className="mt-4 text-sm tracking-wide text-stone-500 dark:text-stone-500">
+            {props.technologies?.join(", ")}
           </p>
         </div>
       </div>
