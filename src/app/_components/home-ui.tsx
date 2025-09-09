@@ -6,12 +6,18 @@ import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "@/app/_components/social-links";
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
 
 export default function HomeUI({
   defaultScramble,
 }: {
   defaultScramble?: string;
 }) {
+  const [showAnimation, setShowAnimation] = useState<{
+    icon: "fire" | "hammer";
+    show: boolean;
+  }>({ icon: "fire", show: false });
+
   const [scrambleStatus, setScrambleStatus] = useState<
     "pending" | "tidy" | "scrambled"
   >(defaultScramble as "pending" | "tidy" | "scrambled");
@@ -24,8 +30,76 @@ export default function HomeUI({
   const scrambled =
     scrambleStatus === "pending" || scrambleStatus === "scrambled";
 
+  const handleClick = () => {
+    if (scrambled) {
+      setShowAnimation({ icon: "hammer", show: true });
+      setTimeout(() => {
+        setScrambleStatus("tidy");
+      }, 300);
+      setTimeout(() => setShowAnimation({ icon: "hammer", show: false }), 1000);
+    } else {
+      setShowAnimation({ icon: "fire", show: true });
+      setTimeout(() => {
+        setScrambleStatus("scrambled");
+      }, 300);
+      setTimeout(() => setShowAnimation({ icon: "fire", show: false }), 1000);
+    }
+  };
+
   return (
     <main className="mx-auto max-w-lg py-8 md:max-w-2xl md:py-20">
+      {/* Fullscreen hammer animation */}
+      <AnimatePresence>
+        {showAnimation.show && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            {/* Hammer itself */}
+            <motion.div
+              animate={
+                showAnimation.icon === "hammer"
+                  ? { rotate: [-90, 20, -10, 0] }
+                  : {
+                      rotate: [-5, 5, -5], // wiggle
+                      scale: [1, 1.2, 1], // pulse
+                    }
+              }
+              transition={
+                showAnimation.icon === "hammer"
+                  ? {
+                      duration: 0.6,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }
+                  : {
+                      duration: 1,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }
+              }
+              className="origin-center text-8xl" // origin-center makes it swing from the center
+            >
+              {showAnimation.icon === "fire" ? "🔥" : "🔨"}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* spacer */}
+      <div className="h-16" />
+
+      <div className="absolute inset-x-0 top-0 mr-4 mt-4 flex h-10 items-center justify-center">
+        <button
+          className="bg-slate-200 px-4 py-2 text-slate-800 transition-all duration-300 active:scale-90 dark:bg-slate-800 dark:text-white"
+          onClick={handleClick}
+        >
+          {scrambled ? "Fix it! 🔨" : "Break it 🔥"}
+        </button>
+      </div>
+
       <SocialLinks scrambled={scrambled} />
 
       <section className="mt-20 flex flex-col items-center justify-center gap-4 md:flex-row">
@@ -60,18 +134,6 @@ export default function HomeUI({
             >
               Please fix this site 😢
             </p>
-            <button
-              className="rounded-lg bg-slate-200 px-4 py-2 text-slate-800 transition-all duration-300 active:scale-90 dark:bg-slate-800 dark:text-white"
-              onClick={() =>
-                setScrambleStatus((p) => {
-                  if (p === "pending") return "tidy";
-                  if (p === "tidy") return "scrambled";
-                  return "tidy";
-                })
-              }
-            >
-              {scrambled ? "Fix it! 🔨" : "Break it 🔥"}
-            </button>
           </div>
         </div>
       </section>
