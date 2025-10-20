@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { NumericFormat, numericFormatter } from "react-number-format";
 
-export const Route = createFileRoute("/pajakin/")({
+export const Route = createFileRoute("/app/pajakin/")({
 	component: RouteComponent,
 });
 
@@ -14,22 +14,22 @@ function PajakinEntryPoint() {
 	const [showResult, setShowResult] = useState<"closed" | "open">("closed");
 	const [incomes, setIncomes] = useState<Income[]>([
 		{ id: numberGen(), amount: 0, occurence: "1" },
-	]);
+	])
 
 	const [outcomes, setOutcomes] = useState<Income[]>([
 		{ id: numberGen(), amount: 0, occurence: "1" },
-	]);
+	])
 
 	function addNewIncomeRow() {
 		setIncomes((prev) =>
 			prev.concat({ id: numberGen(), amount: 0, occurence: "1" }),
-		);
+		)
 	}
 
 	function addNewOutcomeRow() {
 		setOutcomes((prev) =>
 			prev.concat({ id: numberGen(), amount: 0, occurence: "1" }),
-		);
+		)
 	}
 
 	const [ptkpKey, setPtkpKey] = useState<keyof typeof ptkpKategori>("TK/0");
@@ -37,11 +37,11 @@ function PajakinEntryPoint() {
 	const penghasilanBrutoTahunan = incomes.reduce(
 		(acc, cur) => acc + cur.amount * Number(cur.occurence),
 		0,
-	);
+	)
 	const komponenPengurang = outcomes.reduce(
 		(acc, cur) => acc + cur.amount * Number(cur.occurence),
 		0,
-	);
+	)
 	const penghasilanNettoTahunan = penghasilanBrutoTahunan - komponenPengurang;
 	const ptkp = ptkpKategori[ptkpKey].tarif;
 	const pkp = Math.max(penghasilanBrutoTahunan - ptkp - komponenPengurang, 0);
@@ -50,7 +50,7 @@ function PajakinEntryPoint() {
 	const pphTerutangPertahun = calculatedProgressiveTaxes.reduce(
 		(a, c) => c.pphTerutang + a,
 		0,
-	);
+	)
 	const pphTerutangPerbulan = pphTerutangPertahun / 12;
 
 	return (
@@ -134,7 +134,7 @@ function PajakinEntryPoint() {
 																	}
 																: prevIncome,
 														),
-													);
+													)
 												}}
 											/>
 										</td>
@@ -165,11 +165,11 @@ function PajakinEntryPoint() {
 														if (prev.length === 1) {
 															return [
 																{ id: numberGen(), amount: 0, occurence: "1" },
-															];
+															]
 														}
 														return prev.filter(
 															(prevIncome) => prevIncome.id !== income.id,
-														);
+														)
 													})
 												}
 											>
@@ -268,7 +268,7 @@ function PajakinEntryPoint() {
 																		}
 																	: prevOutcome,
 															),
-														);
+														)
 													}}
 												/>
 											</td>
@@ -302,11 +302,11 @@ function PajakinEntryPoint() {
 																		amount: 0,
 																		occurence: "1",
 																	},
-																];
+																]
 															}
 															return prev.filter(
 																(prevOutcome) => prevOutcome.id !== outcome.id,
-															);
+															)
 														})
 													}
 												>
@@ -483,7 +483,7 @@ function PajakinEntryPoint() {
 													{formatCurrency(calcProgTax.pphTerutang)}
 												</td>
 											</tr>
-										);
+										)
 									})}
 									<tr className="border-t-2 border-slate-400">
 										<td colSpan={3} className="px-4 py-2 text-right">
@@ -552,7 +552,7 @@ function PajakinEntryPoint() {
 				</footer>
 			</main>
 		</div>
-	);
+	)
 }
 
 type ProgressiveTax = {
@@ -652,7 +652,7 @@ function calculateProgressiveTax(pkp: number) {
 				...cur,
 				pphTerutang: 0,
 				besaranKenaPajak: 0,
-			});
+			})
 		}
 		if (pkp >= cur.batasAtas) {
 			const besaranKenaPajak = cur.batasAtas - cur.batasBawah;
@@ -660,7 +660,7 @@ function calculateProgressiveTax(pkp: number) {
 				...cur,
 				pphTerutang: besaranKenaPajak * cur.persentasePajak,
 				besaranKenaPajak,
-			});
+			})
 		}
 
 		if (pkp >= cur.batasBawah && pkp < cur.batasAtas) {
@@ -669,7 +669,7 @@ function calculateProgressiveTax(pkp: number) {
 				...cur,
 				pphTerutang: besaranKenaPajak * cur.persentasePajak,
 				besaranKenaPajak,
-			});
+			})
 		}
 	}
 
@@ -723,5 +723,5 @@ function formatCurrency(input: number | string) {
 		thousandSeparator: ".",
 		decimalSeparator: ",",
 		decimalScale: 2,
-	});
+	})
 }
