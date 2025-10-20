@@ -241,6 +241,61 @@ export default function HomeEntryPoint({
 					</a>
 				</section>
 
+				<h3 className="mt-20 text-2xl font-bold tracking-wide text-purple-700 text-center">
+					Apps
+				</h3>
+
+				<section className="mt-4 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:px-0">
+					<Link
+						to="/app/pajakin"
+						data-scrambled={scrambled}
+						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
+						style={{ animationDelay: "1s" }}
+					>
+						<div
+							data-scrambled={scrambled}
+							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12"
+						>
+							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
+									<h4 className="text-xl md:text-2xl">Pajakin</h4>
+									<ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
+								</div>
+								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
+									Tax calculation app for Indonesian employees
+								</p>
+							</div>
+						</div>
+					</Link>
+
+					<Link
+						to="/app/retina"
+						data-scrambled={scrambled}
+						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
+						style={{ animationDelay: "1s" }}
+					>
+						<div
+							data-scrambled={scrambled}
+							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12"
+						>
+							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
+									<h4 className="text-xl md:text-2xl">Is it Retina Display?</h4>
+									<ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
+								</div>
+								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
+									Find out if your device has a Retina display
+								</p>
+							</div>
+						</div>
+					</Link>
+				</section>
+
+				{/* spacer */}
+				<div className="h-16" />
+
+				{/* Footer */}
+
 				<footer className="mt-32 px-2">
 					<p className="text-center text-xs text-stone-400 dark:text-stone-500">
 						© {new Date().getFullYear()} As&apos;ad Ghanim. All rights reserved.
