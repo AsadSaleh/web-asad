@@ -55,7 +55,7 @@ export default function HomeEntryPoint({
 	};
 
 	return (
-		<div className="background-grid">
+		<div className="background-grid dark">
 			<main className="mx-auto max-w-lg py-8 md:max-w-2xl md:py-20">
 				{/* Fullscreen hammer animation */}
 				<AnimatePresence>
@@ -259,7 +259,7 @@ export default function HomeEntryPoint({
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Pajakin</h4>
-									<ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
+									<ArrowRightIcon className="transition-all group-hover:translate-x-1" />
 								</div>
 								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
 									Tax calculation app for Indonesian employees
@@ -281,7 +281,7 @@ export default function HomeEntryPoint({
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Is it Retina Display?</h4>
-									<ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
+									<ArrowRightIcon className="transition-all group-hover:translate-x-1" />
 								</div>
 								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
 									Find out if your device has a Retina display
