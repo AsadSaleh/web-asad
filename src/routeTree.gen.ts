@@ -10,7 +10,9 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PortoIndexRouteImport } from './routes/porto/index'
 import { Route as PajakinIndexRouteImport } from './routes/pajakin/index'
+import { Route as AboutIndexRouteImport } from './routes/about/index'
 import { Route as DemoTanstackQueryRouteImport } from './routes/demo/tanstack-query'
 
 const IndexRoute = IndexRouteImport.update({
@@ -18,9 +20,19 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PortoIndexRoute = PortoIndexRouteImport.update({
+  id: '/porto/',
+  path: '/porto/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PajakinIndexRoute = PajakinIndexRouteImport.update({
   id: '/pajakin/',
   path: '/pajakin/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutIndexRoute = AboutIndexRouteImport.update({
+  id: '/about/',
+  path: '/about/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DemoTanstackQueryRoute = DemoTanstackQueryRouteImport.update({
@@ -32,31 +44,45 @@ const DemoTanstackQueryRoute = DemoTanstackQueryRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
+  '/about': typeof AboutIndexRoute
   '/pajakin': typeof PajakinIndexRoute
+  '/porto': typeof PortoIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
+  '/about': typeof AboutIndexRoute
   '/pajakin': typeof PajakinIndexRoute
+  '/porto': typeof PortoIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
+  '/about/': typeof AboutIndexRoute
   '/pajakin/': typeof PajakinIndexRoute
+  '/porto/': typeof PortoIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/demo/tanstack-query' | '/pajakin'
+  fullPaths: '/' | '/demo/tanstack-query' | '/about' | '/pajakin' | '/porto'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/demo/tanstack-query' | '/pajakin'
-  id: '__root__' | '/' | '/demo/tanstack-query' | '/pajakin/'
+  to: '/' | '/demo/tanstack-query' | '/about' | '/pajakin' | '/porto'
+  id:
+    | '__root__'
+    | '/'
+    | '/demo/tanstack-query'
+    | '/about/'
+    | '/pajakin/'
+    | '/porto/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DemoTanstackQueryRoute: typeof DemoTanstackQueryRoute
+  AboutIndexRoute: typeof AboutIndexRoute
   PajakinIndexRoute: typeof PajakinIndexRoute
+  PortoIndexRoute: typeof PortoIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -68,11 +94,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/porto/': {
+      id: '/porto/'
+      path: '/porto'
+      fullPath: '/porto'
+      preLoaderRoute: typeof PortoIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/pajakin/': {
       id: '/pajakin/'
       path: '/pajakin'
       fullPath: '/pajakin'
       preLoaderRoute: typeof PajakinIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about/': {
+      id: '/about/'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/demo/tanstack-query': {
@@ -88,7 +128,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DemoTanstackQueryRoute: DemoTanstackQueryRoute,
+  AboutIndexRoute: AboutIndexRoute,
   PajakinIndexRoute: PajakinIndexRoute,
+  PortoIndexRoute: PortoIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
