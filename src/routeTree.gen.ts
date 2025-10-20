@@ -14,6 +14,7 @@ import { Route as PortoIndexRouteImport } from './routes/porto/index'
 import { Route as PajakinIndexRouteImport } from './routes/pajakin/index'
 import { Route as AboutIndexRouteImport } from './routes/about/index'
 import { Route as DemoTanstackQueryRouteImport } from './routes/demo/tanstack-query'
+import { Route as AppRetinaIndexRouteImport } from './routes/app/retina/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -40,6 +41,11 @@ const DemoTanstackQueryRoute = DemoTanstackQueryRouteImport.update({
   path: '/demo/tanstack-query',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AppRetinaIndexRoute = AppRetinaIndexRouteImport.update({
+  id: '/app/retina/',
+  path: '/app/retina/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -47,6 +53,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutIndexRoute
   '/pajakin': typeof PajakinIndexRoute
   '/porto': typeof PortoIndexRoute
+  '/app/retina': typeof AppRetinaIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +61,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutIndexRoute
   '/pajakin': typeof PajakinIndexRoute
   '/porto': typeof PortoIndexRoute
+  '/app/retina': typeof AppRetinaIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,12 +70,25 @@ export interface FileRoutesById {
   '/about/': typeof AboutIndexRoute
   '/pajakin/': typeof PajakinIndexRoute
   '/porto/': typeof PortoIndexRoute
+  '/app/retina/': typeof AppRetinaIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/demo/tanstack-query' | '/about' | '/pajakin' | '/porto'
+  fullPaths:
+    | '/'
+    | '/demo/tanstack-query'
+    | '/about'
+    | '/pajakin'
+    | '/porto'
+    | '/app/retina'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/demo/tanstack-query' | '/about' | '/pajakin' | '/porto'
+  to:
+    | '/'
+    | '/demo/tanstack-query'
+    | '/about'
+    | '/pajakin'
+    | '/porto'
+    | '/app/retina'
   id:
     | '__root__'
     | '/'
@@ -75,6 +96,7 @@ export interface FileRouteTypes {
     | '/about/'
     | '/pajakin/'
     | '/porto/'
+    | '/app/retina/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -83,6 +105,7 @@ export interface RootRouteChildren {
   AboutIndexRoute: typeof AboutIndexRoute
   PajakinIndexRoute: typeof PajakinIndexRoute
   PortoIndexRoute: typeof PortoIndexRoute
+  AppRetinaIndexRoute: typeof AppRetinaIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -122,6 +145,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DemoTanstackQueryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/app/retina/': {
+      id: '/app/retina/'
+      path: '/app/retina'
+      fullPath: '/app/retina'
+      preLoaderRoute: typeof AppRetinaIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -131,6 +161,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutIndexRoute: AboutIndexRoute,
   PajakinIndexRoute: PajakinIndexRoute,
   PortoIndexRoute: PortoIndexRoute,
+  AppRetinaIndexRoute: AppRetinaIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
