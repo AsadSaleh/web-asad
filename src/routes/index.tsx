@@ -263,7 +263,7 @@ export default function HomeEntryPoint({
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Time to Sync!</h4>
-									<ArrowRightIcon className="transition-all group-hover:translate-x-1" />
+									<ArrowUpRightIcon className="transition-all group-hover:translate-x-1 group-hover:translate-y-1" />
 								</div>
 								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
 									Find the best time to meet with friends across timezones
@@ -327,7 +327,7 @@ export default function HomeEntryPoint({
 					>
 						<div
 							data-scrambled={scrambled}
-							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-90 data-[scrambled=true]:py-10"
+							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-green-700 to-emerald-800 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-90 data-[scrambled=true]:py-10"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
