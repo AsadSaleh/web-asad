@@ -55,7 +55,7 @@ export default function HomeEntryPoint({
 	};
 
 	return (
-		<div className="background-grid dark">
+		<div className="background-grid">
 			<main className="mx-auto max-w-lg py-8 md:max-w-2xl md:py-20">
 				{/* Fullscreen hammer animation */}
 				<AnimatePresence>
@@ -193,30 +193,6 @@ export default function HomeEntryPoint({
 					</Link>
 
 					<a
-						data-scrambled={scrambled}
-						href="https://www.tanggabelajar.id/"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="block animate-none data-[scrambled=true]:animate-float"
-						style={{ animationDelay: "2.2s" }}
-					>
-						<div
-							data-scrambled={scrambled}
-							className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-orange-600 to-yellow-500 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[45deg]"
-						>
-							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
-								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
-									<h4 className="text-xl md:text-2xl">Learn Coding</h4>
-									<ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
-								</div>
-								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
-									Free coding course
-								</p>
-							</div>
-						</div>
-					</a>
-
-					<a
 						href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -246,6 +222,56 @@ export default function HomeEntryPoint({
 				</h3>
 
 				<section className="mt-4 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:px-0">
+					<a
+						data-scrambled={scrambled}
+						href="https://www.tanggabelajar.id/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="block animate-none data-[scrambled=true]:animate-float"
+						style={{ animationDelay: "2.2s" }}
+					>
+						<div
+							data-scrambled={scrambled}
+							className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-orange-600 to-yellow-600 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[45deg]"
+						>
+							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
+									<h4 className="text-xl md:text-2xl">Tangga Belajar</h4>
+									<ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
+								</div>
+								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
+									Jadi jago &lt;Koding/&gt; dalam waktu 7 hari. Belajar koding
+									gratis!
+								</p>
+							</div>
+						</div>
+					</a>
+
+					{/* timetosync.netlify.app */}
+					<a
+						href="https://timetosync.netlify.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+						data-scrambled={scrambled}
+						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
+						style={{ animationDelay: "1s" }}
+					>
+						<div
+							data-scrambled={scrambled}
+							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-pink-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12"
+						>
+							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
+									<h4 className="text-xl md:text-2xl">Time to Sync!</h4>
+									<ArrowRightIcon className="transition-all group-hover:translate-x-1" />
+								</div>
+								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
+									Find the best time to meet with friends across timezones
+								</p>
+							</div>
+						</div>
+					</a>
+
 					<Link
 						to="/app/pajakin"
 						data-scrambled={scrambled}
@@ -254,7 +280,7 @@ export default function HomeEntryPoint({
 					>
 						<div
 							data-scrambled={scrambled}
-							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12"
+							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-slate-700 to-slate-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
@@ -272,11 +298,11 @@ export default function HomeEntryPoint({
 						to="/app/retina"
 						data-scrambled={scrambled}
 						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
-						style={{ animationDelay: "1s" }}
+						style={{ animationDelay: "0.7s" }}
 					>
 						<div
 							data-scrambled={scrambled}
-							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12"
+							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:rotate-45"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
@@ -289,6 +315,31 @@ export default function HomeEntryPoint({
 							</div>
 						</div>
 					</Link>
+
+					{/* jadwalpupu.netlify.app */}
+					<a
+						href="https://jadwalpupu.netlify.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+						data-scrambled={scrambled}
+						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
+						style={{ animationDelay: "0.2s" }}
+					>
+						<div
+							data-scrambled={scrambled}
+							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-90 data-[scrambled=true]:py-10"
+						>
+							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
+									<h4 className="text-xl md:text-2xl">Jadwal pu-pu</h4>
+									<ArrowUpRightIcon className="transition-all group-hover:translate-x-1 group-hover:translate-y-1" />
+								</div>
+								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
+									Track your digestive system health!
+								</p>
+							</div>
+						</div>
+					</a>
 				</section>
 
 				{/* spacer */}
