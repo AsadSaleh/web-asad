@@ -12,6 +12,7 @@ function RouteComponent() {
 function About() {
 	return (
 		<div className="background-grid">
+			<title>About - Asad personal website</title>
 			<main className="mx-auto w-screen p-4 md:p-6">
 				<nav className="flex">
 					<Link

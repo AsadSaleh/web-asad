@@ -250,6 +250,7 @@ export default function PortoCard(props: {
 }) {
 	return (
 		<div className="flex flex-col justify-between gap-2 rounded-xl border border-stone-200 bg-white p-4 md:p-6 dark:border-stone-700 dark:bg-slate-900">
+			<title>Porto - Asad personal website</title>
 			<div>
 				{/* Image */}
 				<div className="flex items-center justify-center">
