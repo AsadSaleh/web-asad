@@ -5,7 +5,6 @@ import {
 	CheckIcon,
 	CopyIcon,
 } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 
 export const Route = createFileRoute("/")({
@@ -16,101 +15,11 @@ function App() {
 	return <HomeEntryPoint />;
 }
 
-export default function HomeEntryPoint({
-	defaultScramble,
-}: {
-	defaultScramble?: string;
-}) {
-	const [showAnimation, setShowAnimation] = useState<{
-		icon: "fire" | "hammer";
-		show: boolean;
-	}>({ icon: "fire", show: false });
-
-	const [scrambleStatus, setScrambleStatus] = useState<
-		"pending" | "tidy" | "scrambled"
-	>(defaultScramble as "pending" | "tidy" | "scrambled");
-
-	// Set cookie to store scramble status
-	// useEffect(() => {
-	// 	document.cookie = `web:asad:scramble=${scrambleStatus}; path=/; max-age=31536000`;
-	// }, [scrambleStatus]);
-
-	const scrambled =
-		scrambleStatus === "pending" || scrambleStatus === "scrambled";
-
-	const handleClick = () => {
-		if (scrambled) {
-			setShowAnimation({ icon: "hammer", show: true });
-			setTimeout(() => {
-				setScrambleStatus("tidy");
-			}, 300);
-			setTimeout(() => setShowAnimation({ icon: "hammer", show: false }), 1000);
-		} else {
-			setShowAnimation({ icon: "fire", show: true });
-			setTimeout(() => {
-				setScrambleStatus("scrambled");
-			}, 300);
-			setTimeout(() => setShowAnimation({ icon: "fire", show: false }), 1000);
-		}
-	};
-
+export default function HomeEntryPoint() {
 	return (
 		<div className="background-grid">
 			<main className="mx-auto max-w-lg py-8 md:max-w-2xl md:py-20">
-				{/* Fullscreen hammer animation */}
-				<AnimatePresence>
-					{showAnimation.show && (
-						<motion.div
-							className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							exit={{ opacity: 0 }}
-						>
-							{/* Hammer itself */}
-							<motion.div
-								animate={
-									showAnimation.icon === "hammer"
-										? { rotate: [-90, 20, -10, 0] }
-										: {
-												rotate: [-5, 5, -5], // wiggle
-												scale: [1, 1.2, 1], // pulse
-											}
-								}
-								transition={
-									showAnimation.icon === "hammer"
-										? {
-												duration: 0.6,
-												repeat: Infinity,
-												ease: "easeInOut",
-											}
-										: {
-												duration: 1,
-												repeat: Infinity,
-												ease: "easeInOut",
-											}
-								}
-								className="origin-center text-8xl" // origin-center makes it swing from the center
-							>
-								{showAnimation.icon === "fire" ? "🔥" : "🔨"}
-							</motion.div>
-						</motion.div>
-					)}
-				</AnimatePresence>
-
-				{/* spacer */}
-				<div className="h-16" />
-
-				<div className="absolute inset-x-0 top-0 mr-4 mt-4 flex h-10 items-center justify-center">
-					<button
-						type="button"
-						className="bg-slate-200 px-4 py-2 text-slate-800 transition-all duration-300 active:scale-90 dark:bg-slate-800 dark:text-white"
-						onClick={handleClick}
-					>
-						{scrambled ? "Fix it! 🔨" : "Break it 🔥"}
-					</button>
-				</div>
-
-				<SocialLinks scrambled={scrambled} />
+				<SocialLinks scrambled={false} />
 
 				<section className="mt-20 flex flex-col items-center justify-center gap-4 md:flex-row">
 					<img
@@ -119,7 +28,7 @@ export default function HomeEntryPoint({
 						height={130}
 						alt="Pixelized of As'ad"
 						className="rounded-3xl transition data-[scrambled=true]:blur-md"
-						data-scrambled={scrambled}
+						data-scrambled={false}
 					/>
 					<div className="text-center md:text-left">
 						<p className="text-sm italic text-stone-400 md:text-xl">
@@ -140,7 +49,7 @@ export default function HomeEntryPoint({
 						<div className="flex items-center justify-center gap-2 md:justify-start">
 							<p
 								className="text-stone-500 data-[hide=true]:hidden dark:text-stone-400"
-								data-hide={!scrambled}
+								data-hide={true}
 							>
 								Please fix this site 😢
 							</p>
@@ -151,11 +60,11 @@ export default function HomeEntryPoint({
 				<section className="mt-20 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:px-0">
 					<Link
 						to="/porto"
-						data-scrambled={scrambled}
+						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-40 data-[scrambled=true]:animate-float-2"
 					>
 						<div
-							data-scrambled={scrambled}
+							data-scrambled={false}
 							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 p-1 transition-all active:scale-95 data-[scrambled=true]:rotate-6"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
@@ -172,12 +81,12 @@ export default function HomeEntryPoint({
 
 					<Link
 						to="/about"
-						data-scrambled={scrambled}
+						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-10 data-[scrambled=true]:animate-float"
 						style={{ animationDelay: "0.75s" }}
 					>
 						<div
-							data-scrambled={scrambled}
+							data-scrambled={false}
 							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-3"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
@@ -196,12 +105,12 @@ export default function HomeEntryPoint({
 						href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
 						target="_blank"
 						rel="noopener noreferrer"
-						data-scrambled={scrambled}
+						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-14 data-[scrambled=true]:animate-float"
 						style={{ animationDelay: "1.5s" }}
 					>
 						<div
-							data-scrambled={scrambled}
+							data-scrambled={false}
 							className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-green-600 to-teal-800 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[160deg]"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
@@ -223,7 +132,7 @@ export default function HomeEntryPoint({
 
 				<section className="mt-4 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:px-0">
 					<a
-						data-scrambled={scrambled}
+						data-scrambled={false}
 						href="https://www.tanggabelajar.id/"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -231,7 +140,7 @@ export default function HomeEntryPoint({
 						style={{ animationDelay: "2.2s" }}
 					>
 						<div
-							data-scrambled={scrambled}
+							data-scrambled={false}
 							className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-orange-600 to-yellow-600 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[45deg]"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
@@ -252,18 +161,18 @@ export default function HomeEntryPoint({
 						href="https://timetosync.netlify.app/"
 						target="_blank"
 						rel="noopener noreferrer"
-						data-scrambled={scrambled}
+						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
 						style={{ animationDelay: "1s" }}
 					>
 						<div
-							data-scrambled={scrambled}
+							data-scrambled={false}
 							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-pink-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Time to Sync!</h4>
-									<ArrowUpRightIcon className="transition-all group-hover:translate-x-1 group-hover:translate-y-1" />
+									<ArrowUpRightIcon className="transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
 								</div>
 								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
 									Find the best time to meet with friends across timezones
@@ -272,36 +181,38 @@ export default function HomeEntryPoint({
 						</div>
 					</a>
 
-					<Link
-						to="/app/pajakin"
-						data-scrambled={scrambled}
+					<a
+						href="https://pajakin.vercel.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
 						style={{ animationDelay: "1s" }}
 					>
 						<div
-							data-scrambled={scrambled}
+							data-scrambled={false}
 							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-slate-700 to-slate-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Pajakin</h4>
-									<ArrowRightIcon className="transition-all group-hover:translate-x-1" />
+									<ArrowUpRightIcon className="transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
 								</div>
 								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
 									Tax calculation app for Indonesian employees
 								</p>
 							</div>
 						</div>
-					</Link>
+					</a>
 
 					<Link
 						to="/app/retina"
-						data-scrambled={scrambled}
+						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
 						style={{ animationDelay: "0.7s" }}
 					>
 						<div
-							data-scrambled={scrambled}
+							data-scrambled={false}
 							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:rotate-45"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
@@ -321,12 +232,12 @@ export default function HomeEntryPoint({
 						href="https://jadwalpupu.netlify.app/"
 						target="_blank"
 						rel="noopener noreferrer"
-						data-scrambled={scrambled}
+						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
 						style={{ animationDelay: "0.2s" }}
 					>
 						<div
-							data-scrambled={scrambled}
+							data-scrambled={false}
 							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-green-700 to-emerald-800 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-90 data-[scrambled=true]:py-10"
 						>
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
