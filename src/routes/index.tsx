@@ -48,60 +48,6 @@ export default function HomeEntryPoint() {
 					</div>
 				</section>
 
-				<section className="mt-20 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:px-0">
-					<Link to="/porto" className="block animate-none ">
-						<div className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 p-1 transition-all active:scale-95 data-[scrambled=true]:rotate-6">
-							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
-								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
-									<h4 className="text-xl md:text-2xl">Portfolio</h4>
-									<ArrowRightIcon className="transition-all group-hover:translate-x-1 dark:text-white" />
-								</div>
-								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
-									Let&apos;s see As&apos;ad&apos;s playing cards
-								</p>
-							</div>
-						</div>
-					</Link>
-
-					<Link
-						to="/about"
-						className="block animate-none "
-						style={{ animationDelay: "0.75s" }}
-					>
-						<div className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 p-1 transition active:scale-95 ">
-							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
-								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
-									<h4 className="text-xl md:text-2xl">About</h4>
-									<ArrowRightIcon className="transition-all group-hover:translate-x-1 dark:text-white" />
-								</div>
-								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
-									Read story about my journey
-								</p>
-							</div>
-						</div>
-					</Link>
-
-					<a
-						href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="block animate-none "
-						style={{ animationDelay: "1.5s" }}
-					>
-						<div className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-green-600 to-teal-800 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[160deg]">
-							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
-								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
-									<h4 className="text-xl md:text-2xl">Blogs</h4>
-									<ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
-								</div>
-								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
-									Discover what&apos;s inside my head
-								</p>
-							</div>
-						</div>
-					</a>
-				</section>
-
 				<h3 className="mt-20 text-2xl font-bold tracking-wide text-purple-700 text-center">
 					Apps
 				</h3>
@@ -203,6 +149,64 @@ export default function HomeEntryPoint() {
 								</div>
 								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
 									Track your digestive system health!
+								</p>
+							</div>
+						</div>
+					</a>
+				</section>
+
+				<h3 className="mt-20 text-2xl font-bold tracking-wide text-center">
+					About me
+				</h3>
+
+				<section className="mt-6 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:px-0">
+					<Link to="/porto" className="block animate-none ">
+						<div className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 p-1 transition-all active:scale-95 data-[scrambled=true]:rotate-6">
+							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
+									<h4 className="text-xl md:text-2xl">Portfolio</h4>
+									<ArrowRightIcon className="transition-all group-hover:translate-x-1 dark:text-white" />
+								</div>
+								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
+									Let&apos;s see As&apos;ad&apos;s playing cards
+								</p>
+							</div>
+						</div>
+					</Link>
+
+					<Link
+						to="/about"
+						className="block animate-none "
+						style={{ animationDelay: "0.75s" }}
+					>
+						<div className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 p-1 transition active:scale-95 ">
+							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
+									<h4 className="text-xl md:text-2xl">About</h4>
+									<ArrowRightIcon className="transition-all group-hover:translate-x-1 dark:text-white" />
+								</div>
+								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
+									Read story about my journey
+								</p>
+							</div>
+						</div>
+					</Link>
+
+					<a
+						href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="block animate-none "
+						style={{ animationDelay: "1.5s" }}
+					>
+						<div className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-green-600 to-teal-800 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[160deg]">
+							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
+								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
+									<h4 className="text-xl md:text-2xl">Blogs</h4>
+									<ArrowUpRightIcon className="transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
+								</div>
+								<p className="text-sm text-slate-200 md:text-base dark:text-slate-300">
+									Discover what&apos;s inside my head
 								</p>
 							</div>
 						</div>
