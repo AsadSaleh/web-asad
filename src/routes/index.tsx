@@ -19,7 +19,7 @@ export default function HomeEntryPoint() {
 	return (
 		<div className="background-grid">
 			<main className="mx-auto max-w-lg py-8 md:max-w-2xl md:py-20">
-				<SocialLinks scrambled={false} />
+				<SocialLinks />
 
 				<section className="mt-20 flex flex-col items-center justify-center gap-4 md:flex-row">
 					<img
@@ -27,8 +27,7 @@ export default function HomeEntryPoint() {
 						width={130}
 						height={130}
 						alt="Pixelized of As'ad"
-						className="rounded-3xl transition data-[scrambled=true]:blur-md"
-						data-scrambled={false}
+						className="rounded-3xl transition "
 					/>
 					<div className="text-center md:text-left">
 						<p className="text-sm italic text-stone-400 md:text-xl">
@@ -46,27 +45,12 @@ export default function HomeEntryPoint() {
 							</span>{" "}
 							software engineer.
 						</p>
-						<div className="flex items-center justify-center gap-2 md:justify-start">
-							<p
-								className="text-stone-500 data-[hide=true]:hidden dark:text-stone-400"
-								data-hide={true}
-							>
-								Please fix this site 😢
-							</p>
-						</div>
 					</div>
 				</section>
 
 				<section className="mt-20 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:px-0">
-					<Link
-						to="/porto"
-						data-scrambled={false}
-						className="block animate-none data-[scrambled=true]:mt-40 data-[scrambled=true]:animate-float-2"
-					>
-						<div
-							data-scrambled={false}
-							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 p-1 transition-all active:scale-95 data-[scrambled=true]:rotate-6"
-						>
+					<Link to="/porto" className="block animate-none ">
+						<div className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-violet-700 to-blue-600 p-1 transition-all active:scale-95 data-[scrambled=true]:rotate-6">
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Portfolio</h4>
@@ -81,14 +65,10 @@ export default function HomeEntryPoint() {
 
 					<Link
 						to="/about"
-						data-scrambled={false}
-						className="block animate-none data-[scrambled=true]:mt-10 data-[scrambled=true]:animate-float"
+						className="block animate-none "
 						style={{ animationDelay: "0.75s" }}
 					>
-						<div
-							data-scrambled={false}
-							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-3"
-						>
+						<div className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-red-700 to-orange-600 p-1 transition active:scale-95 ">
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">About</h4>
@@ -105,14 +85,10 @@ export default function HomeEntryPoint() {
 						href="https://asadghanim.notion.site/be2974dfd64245ae9d0023d947d296ef?v=d9bffec2c5c541218f9df5cba411bae5"
 						target="_blank"
 						rel="noopener noreferrer"
-						data-scrambled={false}
-						className="block animate-none data-[scrambled=true]:mt-14 data-[scrambled=true]:animate-float"
+						className="block animate-none "
 						style={{ animationDelay: "1.5s" }}
 					>
-						<div
-							data-scrambled={false}
-							className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-green-600 to-teal-800 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[160deg]"
-						>
+						<div className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-green-600 to-teal-800 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[160deg]">
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Blogs</h4>
@@ -132,17 +108,13 @@ export default function HomeEntryPoint() {
 
 				<section className="mt-4 grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:px-0">
 					<a
-						data-scrambled={false}
 						href="https://www.tanggabelajar.id/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="block animate-none data-[scrambled=true]:animate-float"
+						className="block animate-none "
 						style={{ animationDelay: "2.2s" }}
 					>
-						<div
-							data-scrambled={false}
-							className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-orange-600 to-yellow-600 p-1 transition active:scale-95 data-[scrambled=true]:rotate-[45deg]"
-						>
+						<div className="group h-full rotate-0 rounded-lg bg-gradient-to-r from-orange-600 to-yellow-600 p-1 transition active:scale-95 ">
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Tangga Belajar</h4>
@@ -161,14 +133,10 @@ export default function HomeEntryPoint() {
 						href="https://timetosync.netlify.app/"
 						target="_blank"
 						rel="noopener noreferrer"
-						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
 						style={{ animationDelay: "1s" }}
 					>
-						<div
-							data-scrambled={false}
-							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-pink-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12"
-						>
+						<div className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-pink-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12">
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Time to Sync!</h4>
@@ -185,14 +153,10 @@ export default function HomeEntryPoint() {
 						href="https://pajakin.vercel.app/"
 						target="_blank"
 						rel="noopener noreferrer"
-						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
 						style={{ animationDelay: "1s" }}
 					>
-						<div
-							data-scrambled={false}
-							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-slate-700 to-slate-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12"
-						>
+						<div className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-slate-700 to-slate-600 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-12">
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Pajakin</h4>
@@ -207,14 +171,10 @@ export default function HomeEntryPoint() {
 
 					<Link
 						to="/app/retina"
-						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
 						style={{ animationDelay: "0.7s" }}
 					>
-						<div
-							data-scrambled={false}
-							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:rotate-45"
-						>
+						<div className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-indigo-700 to-purple-600 p-1 transition active:scale-95 data-[scrambled=true]:rotate-45">
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Is it Retina Display?</h4>
@@ -232,14 +192,10 @@ export default function HomeEntryPoint() {
 						href="https://jadwalpupu.netlify.app/"
 						target="_blank"
 						rel="noopener noreferrer"
-						data-scrambled={false}
 						className="block animate-none data-[scrambled=true]:mt-20 data-[scrambled=true]:animate-float-2"
 						style={{ animationDelay: "0.2s" }}
 					>
-						<div
-							data-scrambled={false}
-							className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-green-700 to-emerald-800 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-90 data-[scrambled=true]:py-10"
-						>
+						<div className="group block h-full rotate-0 rounded-lg bg-gradient-to-r from-green-700 to-emerald-800 p-1 transition active:scale-95 data-[scrambled=true]:-rotate-90 data-[scrambled=true]:py-10">
 							<div className="h-full w-full rounded-lg p-4 transition-all group-hover:bg-transparent md:px-6 md:py-4 dark:bg-black">
 								<div className="flex items-center justify-between gap-2 text-white dark:text-white">
 									<h4 className="text-xl md:text-2xl">Jadwal pu-pu</h4>
@@ -268,58 +224,45 @@ export default function HomeEntryPoint() {
 	);
 }
 
-function SocialLinks({ scrambled }: { scrambled: boolean }) {
+function SocialLinks() {
 	return (
 		<div className="flex flex-wrap items-start justify-center gap-2 md:gap-4">
-			<div className={scrambled ? "animate-float-2" : ""}>
+			<div className={"animate-float-2"}>
 				<a
 					href="https://github.com/AsadSaleh"
 					target="_blank"
 					rel="noopener noreferrer"
-					data-scramble={scrambled}
 					className="flex h-min items-center rounded-xl bg-slate-800 p-4 font-mono text-xs text-white transition-all duration-150 hover:scale-110 active:scale-95 data-[scramble=true]:mt-10 data-[scramble=true]:-rotate-12"
 				>
 					<p>GitHub</p>
 				</a>
 			</div>
-			<div
-				className={scrambled ? "animate-float-2" : ""}
-				style={{ animationDelay: "0.5s" }}
-			>
+			<div className={"animate-float-2"} style={{ animationDelay: "0.5s" }}>
 				<a
 					href="https://www.linkedin.com/in/as-ad-saleh-umar-876608a4/"
 					target="_blank"
 					rel="noopener noreferrer"
-					data-scramble={scrambled}
 					className="flex h-min items-center rounded-xl bg-[#0077b5] p-4 font-mono text-xs text-white transition-all duration-150 hover:scale-110 active:scale-95 data-[scramble=true]:mt-20 data-[scramble=true]:rotate-6"
 				>
 					<p>LinkedIn</p>
 				</a>
 			</div>
-			<div
-				className={scrambled ? "animate-float-2" : ""}
-				style={{ animationDelay: "1s" }}
-			>
+			<div className={"animate-float-2"} style={{ animationDelay: "1s" }}>
 				<a
 					href="https://stackoverflow.com/users/9844546/asad-s"
 					target="_blank"
 					rel="noopener noreferrer"
-					data-scramble={scrambled}
 					className="data-[scramble=true]:mb-15 flex h-min items-center rounded-xl bg-[#F48024] p-4 font-mono text-xs text-white transition-all duration-150 hover:scale-110 active:scale-95 data-[scramble=true]:rotate-12"
 				>
 					<p>StackOverflow</p>
 				</a>
 			</div>
-			<EmailWithCopy scrambled={scrambled} />
-			<div
-				className={scrambled ? "animate-float-2" : ""}
-				style={{ animationDelay: "2s" }}
-			>
+			<EmailWithCopy />
+			<div className={"animate-float-2"} style={{ animationDelay: "2s" }}>
 				<a
 					href="/documents/CV_Asad_Saleh_Umar.pdf"
 					target="_blank"
 					rel="noopener noreferrer"
-					data-scramble={scrambled}
 					className="flex h-min items-center gap-1 rounded-xl bg-green-700 p-4 font-mono text-xs text-white transition-all duration-150 hover:scale-110 active:scale-95 data-[scramble=true]:-ml-10 data-[scramble=true]:-mt-10 data-[scramble=true]:-rotate-3"
 				>
 					Latest CV
@@ -329,7 +272,7 @@ function SocialLinks({ scrambled }: { scrambled: boolean }) {
 	);
 }
 
-function EmailWithCopy({ scrambled = false }: { scrambled?: boolean }) {
+function EmailWithCopy() {
 	const [coppied, setCoppied] = useState(false);
 
 	async function copyEmailToClipboard() {
@@ -351,13 +294,9 @@ function EmailWithCopy({ scrambled = false }: { scrambled?: boolean }) {
 	}, [coppied]);
 
 	return (
-		<div
-			className={scrambled ? "animate-float-2" : ""}
-			style={{ animationDelay: "1.5s" }}
-		>
+		<div className={"animate-float-2"} style={{ animationDelay: "1.5s" }}>
 			<button
 				onClick={copyEmailToClipboard}
-				data-scramble={scrambled}
 				className="flex h-min items-center cursor-pointer gap-2 rounded-xl bg-red-700 p-4 font-mono text-xs text-white transition-all duration-150 hover:scale-110 active:scale-95 data-[scramble=true]:mt-10 data-[scramble=true]:rotate-[-20deg]"
 				type="button"
 			>
