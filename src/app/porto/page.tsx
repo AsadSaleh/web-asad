@@ -34,6 +34,19 @@ export default function Porto() {
         </h4>
         <div className="mt-4 grid grid-cols-1 gap-4">
           <PortoCard
+            title="Jejak Uang"
+            subtitle="An offline-first, privacy-first money tracker that auto-parses your bank statement PDFs."
+            desc="I built Jejak Uang because tracking money should be effortless and never come at the cost of your privacy. Instead of typing in transactions one by one, you just drop in your bank statement PDF and it auto-parses every transaction for you.\n\nIt's offline-first, so it works even without internet, and privacy-first, meaning your financial data stays with you and never leaves your device unless you want it to. Built with Tanstack Start and deployed on Cloudflare, with LiteParse handling the PDF parsing and Shadcn UI for a clean, polished interface."
+            links={{}}
+            technologies={[
+              "Tanstack Start",
+              "Cloudflare",
+              "LiteParse",
+              "Shadcn UI",
+            ]}
+            year="2026"
+          />
+          <PortoCard
             title="PALMS"
             subtitle="Pascal Montessori's Academic & Learning Management System"
             desc="This application is quite complex and feature-rich. It connects to the Backend API, OpenAI API, and S3 API. On the frontend side, it includes drag-and-drop file input, drag-and-drop table sorting, light & dark mode, and an Excel-like editable table.\n\nThe repository is really well structured. Errors are never thrown, instead it is treated as values and quite strongly typed. I used a combination of RSC and client-side data fetching: RSC with Server Action and also Tanstack Query & Mutation."
@@ -78,6 +91,19 @@ export default function Porto() {
             }}
             technologies={["Flutter", "Dart"]}
             year="2021"
+          />
+
+          <PortoCard
+            title="Pajakin"
+            subtitle="Offline-first, private, free tax calculator for Indonesian worker (PPh 21)"
+            desc="The app itself is simple, but it tackles one of the most tedious and niche topics out there: TAX. Calculating Pph 21 always feels intimidating, but it turns out it doesn't have to be. Unlike a spreadsheet, Pajakin can be opened from anywhere: phone, laptop, you name it. So anyone can figure out their income tax in seconds."
+            imageUrl="/images/pajakin.png"
+            links={{
+              app: "https://pajakin.vercel.app/",
+              github: "https://github.com/AsadSaleh/pajakin",
+            }}
+            technologies={["Next.js", "Tailwind", "Vercel"]}
+            year="2023"
           />
         </div>
 
@@ -124,18 +150,6 @@ export default function Porto() {
               github: "https://github.com/AsadSaleh/time-ui",
             }}
             technologies={["Vite", "React.js", "Tailwind", "Netlify"]}
-            year="2023"
-          />
-          <PortoCard
-            title="Pajakin"
-            subtitle="Free tax calculator for Indonesian worker (Pph 21)"
-            desc="Ini juga karena iseng. Kayaknya ngitung pajak Pph tuh perasaan susah banget yaa. Ternyata gak susah-susah amat kok. Dan enaknya pake Pajakin (tidak seperti excel) bisa dibuka dari mana aja (HP, Laptop, dll)."
-            imageUrl="/images/pajakin.png"
-            links={{
-              app: "https://pajakin.vercel.app/",
-              github: "https://github.com/AsadSaleh/pajakin",
-            }}
-            technologies={["Next.js", "Tailwind", "Vercel"]}
             year="2023"
           />
           <PortoCard
