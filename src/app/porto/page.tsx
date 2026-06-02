@@ -111,7 +111,6 @@ export default function Porto() {
             subtitle="Offline-first, private, free tax calculator for Indonesian worker (PPh 21)"
             desc="The app itself is simple, but it tackles one of the most tedious and niche topics out there: TAX. Calculating Pph 21 always feels intimidating, but it turns out it doesn't have to be. Unlike a spreadsheet, Pajakin can be opened from anywhere: phone, laptop, you name it. So anyone can figure out their income tax in seconds."
             imageUrls={[
-              "/images/pajakin.png",
               "/images/pajakin/pajakin-1.png",
               "/images/pajakin/pajakin-2.png",
               "/images/pajakin/pajakin-3.png",
