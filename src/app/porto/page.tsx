@@ -40,6 +40,12 @@ export default function Porto() {
             links={{
               app: "https://jejakuang.azzzad-s.workers.dev/"
             }}
+            imageUrls={[
+              "/images/jejak-uang/jejak-uang-1.png",
+              "/images/jejak-uang/jejak-uang-2.png",
+              "/images/jejak-uang/jejak-uang-3.png",
+              "/images/jejak-uang/jejak-uang-4.png",
+            ]}
             technologies={[
               "Tanstack Start",
               "Cloudflare",
@@ -52,7 +58,12 @@ export default function Porto() {
             title="PALMS"
             subtitle="Pascal Montessori's Academic & Learning Management System"
             desc="This application is quite complex and feature-rich. It connects to the Backend API, OpenAI API, and S3 API. On the frontend side, it includes drag-and-drop file input, drag-and-drop table sorting, light & dark mode, and an Excel-like editable table.\n\nThe repository is really well structured. Errors are never thrown, instead it is treated as values and quite strongly typed. I used a combination of RSC and client-side data fetching: RSC with Server Action and also Tanstack Query & Mutation."
-            imageUrl="/images/palms.png"
+            imageUrls={[
+              "/images/palms.png",
+              "/images/palms/record_keeping_table_palms.png",
+              "/images/palms/album_palms.png",
+              "/images/palms/events_palms.png",
+            ]}
             links={{}}
             technologies={[
               "Next.js",
@@ -99,7 +110,13 @@ export default function Porto() {
             title="Pajakin"
             subtitle="Offline-first, private, free tax calculator for Indonesian worker (PPh 21)"
             desc="The app itself is simple, but it tackles one of the most tedious and niche topics out there: TAX. Calculating Pph 21 always feels intimidating, but it turns out it doesn't have to be. Unlike a spreadsheet, Pajakin can be opened from anywhere: phone, laptop, you name it. So anyone can figure out their income tax in seconds."
-            imageUrl="/images/pajakin.png"
+            imageUrls={[
+              "/images/pajakin.png",
+              "/images/pajakin/pajakin-1.png",
+              "/images/pajakin/pajakin-2.png",
+              "/images/pajakin/pajakin-3.png",
+              "/images/pajakin/pajakin-4.png",
+            ]}
             links={{
               app: "https://pajakin.vercel.app/",
               github: "https://github.com/AsadSaleh/pajakin",
@@ -233,9 +250,7 @@ export default function Porto() {
             subtitle="Aplikasi web untuk mengelola dana pinjaman peer-to-peer"
             desc="Web app pertama. Belajar React.js, Redux, Redux-Form, Axios. Dari sini aku memulai segalanya. Jadi nostalgia banget."
             imageUrl="/images/lumbung_dana.png"
-            links={{
-              app: "https://lumbungdana.co.id/",
-            }}
+            links={{}}
             technologies={[
               "React.js",
               "Create React App",
