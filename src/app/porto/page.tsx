@@ -37,7 +37,9 @@ export default function Porto() {
             title="Jejak Uang"
             subtitle="An offline-first, privacy-first money tracker that auto-parses your bank statement PDFs."
             desc="I built Jejak Uang because tracking money should be effortless and never come at the cost of your privacy. Instead of typing in transactions one by one, you just drop in your bank statement PDF and it auto-parses every transaction for you.\n\nIt's offline-first, so it works even without internet, and privacy-first, meaning your financial data stays with you and never leaves your device unless you want it to. Built with Tanstack Start and deployed on Cloudflare, with LiteParse handling the PDF parsing and Shadcn UI for a clean, polished interface."
-            links={{}}
+            links={{
+              app: "https://jejakuang.azzzad-s.workers.dev/"
+            }}
             technologies={[
               "Tanstack Start",
               "Cloudflare",
